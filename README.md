@@ -35,8 +35,7 @@ Create a `.babelrc` in your project
 ```js
 {
   "presets": [
-    "next/babel",
-    "@zeit/next-typescript/babel"
+    "next-but-one/babel"
   ]
 }
 ```

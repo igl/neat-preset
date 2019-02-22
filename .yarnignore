@@ -1,4 +1,7 @@
 *
+!babel-plugins.js
+!babel-server.js
+!babel.js
 !index.js
 !package.json
 !README.md

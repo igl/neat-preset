@@ -9,10 +9,12 @@
         "url": "https://github.com/igl/next-but-one"
     },
     "dependencies": {
+        "@babel/core": "7.3.3",
         "@babel/plugin-proposal-export-default-from": "7.2.0",
         "@babel/plugin-proposal-export-namespace-from": "7.2.0",
         "@babel/plugin-proposal-optional-catch-binding": "7.2.0",
         "@babel/plugin-proposal-throw-expressions": "7.2.0",
+        "@babel/preset-env": "7.3.1",
         "@zeit/next-css": "1.0.1",
         "babel-plugin-macros": "2.5.0",
         "babel-plugin-module-resolver": "3.2.0",
