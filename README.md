@@ -1,21 +1,55 @@
 next-but-one
 ------------
 
-My highly opinionated next-plugin-bundle.
+My highly opinionated plugin-bundle for nextjs applications.
 
 Includes:
 
-- @zeit/next-css
-- next-images
-- next-fonts
-- next-env
-- dotenv-load
+- [@zeit/next-css](https://www.npmjs.com/package/@zeit/next-css)
+- [next-images](https://www.npmjs.com/package/next-images)
+- [next-fonts](https://www.npmjs.com/package/next-fonts)
+- [next-env](https://www.npmjs.com/package/next-env)
+- [dotenv-load](https://www.npmjs.com/package/dotenv-load)
+- [babel-plugin-macros](https://www.npmjs.com/package/babel-plugin-macros)
+- [@babel/plugin-proposal-export-default-from](https://www.npmjs.com/package/@babel/plugin-proposal-export-default-from)
+- [@babel/plugin-proposal-export-namespace-from](https://www.npmjs.com/package/@babel/plugin-proposal-export-namespace-from)
+- [@babel/plugin-proposal-optional-catch-binding](https://www.npmjs.com/package/@babel/plugin-proposal-optional-catch-binding)
+- [@babel/plugin-proposal-throw-expressions](https://www.npmjs.com/package/@babel/plugin-proposal-throw-expressions)
+- [babel-plugin-module-resolver](https://www.npmjs.com/package/babel-plugin-module-resolver)
 
 enjoy!
 
-## Options
 
-With CSS modules and options
+## Usage
+
+Create a `next.config.js` in your project
+
+```js
+// next.config.js
+const withNextButOne = require('next-but-one')
+module.exports = withNextButOne()
+```
+
+Create a `.babelrc` in your project
+
+```js
+{
+  "presets": [
+    "next/babel",
+    "@zeit/next-typescript/babel"
+  ]
+}
+```
+
+---
+
+
+## Configuration
+
+Optionally you can pass custom plugin configuration.
+
+
+With CSS modules and options:
 
 ```js
 // next.config.js
@@ -32,25 +66,21 @@ module.exports = withNextButOne({
 ```
 
 
-With images from a different remote or inlined images with size limit
+With images from a different remote or inlined images with size limit:
 
 ```js
-// next.config.js
-const withNextButOne = require('next-but-one')
 module.exports = withNextButOne({
     font: {
         assetPrefix: 'https://example.com',
-        inlineImageLimit: 16384,
+        inlineImageLimit: 16384, // default is 8192
     }
 })
 ```
 
 
-With fonts from a different remote or include SVG fonts
+With fonts from a different remote or include SVG fonts:
 
 ```js
-// next.config.js
-const withNextButOne = require('next-but-one')
 module.exports = withNextButOne({
     font: {
         assetPrefix: 'https://example.com',
@@ -60,11 +90,9 @@ module.exports = withNextButOne({
 ```
 
 
-With Custom env variable prefixes
+With Custom env variable prefixes:
 
 ```js
-// next.config.js
-const withNextButOne = require('next-but-one')
 module.exports = withNextButOne({
     env: {
         staticPrefix: 'CUSTOM_STATIC_',
