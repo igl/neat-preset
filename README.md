@@ -1,12 +1,17 @@
 next-but-one
 ------------
 
+[![npm version](https://img.shields.io/npm/v/next-but-one.svg?style=flat-square)](https://www.npmjs.com/package/next-but-one)
+[![npm downloads](https://img.shields.io/npm/dm/next-but-one.svg?style=flat-square)](https://www.npmjs.com/package/next-but-one)
+
 My highly opinionated plugin-bundle for nextjs applications.
 
-The dotenv loading behaviour is similar to create-react-app.
+Main features:
 
-
-enjoy!
+- Adds webpack file-loader for images and fonts using `next-images` & `next-fonts`
+- Adds dotenv loading behaviour similar to create-react-app
+- Ships babel presets for server & client. Replacing `next/babel`
+- Adds my favorite babel-proposal plugins! [See list below](#included-libraries)
 
 
 ## Usage
@@ -54,25 +59,7 @@ Ignore .env.local files in your `.gitignore`
 .env.*.local
 ```
 
-
-## Included Libraries
-
-- [@zeit/next-css](https://www.npmjs.com/package/@zeit/next-css)
-- [next-images](https://www.npmjs.com/package/next-images)
-- [next-fonts](https://www.npmjs.com/package/next-fonts)
-- [next-env](https://www.npmjs.com/package/next-env)
-- [dotenv-load](https://www.npmjs.com/package/dotenv-load)
-- [@babel/plugin-proposal-export-default-from](https://www.npmjs.com/package/@babel/plugin-proposal-export-default-from)
-- [@babel/plugin-proposal-export-namespace-from](https://www.npmjs.com/package/@babel/plugin-proposal-export-namespace-from)
-- [@babel/plugin-proposal-optional-catch-binding](https://www.npmjs.com/package/@babel/plugin-proposal-optional-catch-binding)
-- [@babel/plugin-proposal-throw-expressions](https://www.npmjs.com/package/@babel/plugin-proposal-throw-expressions)
-- [@babel/plugin-syntax-dynamic-import](https://www.npmjs.com/package/@babel/plugin-syntax-dynamic-import)
-- [@babel/plugin-transform-destructuring](https://www.npmjs.com/package/@babel/plugin-transform-destructuring)
-- [@babel/plugin-transform-runtime](https://www.npmjs.com/package/@babel/plugin-transform-runtime)
-- [@babel/plugin-transform-spread](https://www.npmjs.com/package/@babel/plugin-transform-spread)
-- [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env)
-- [babel-plugin-macros](https://www.npmjs.com/package/babel-plugin-macros)
-- [babel-plugin-module-resolver](https://www.npmjs.com/package/babel-plugin-module-resolver)
+[What other env files can i use?](https://github.com/formatlos/dotenv-load#what-other-env-files-can-i-use).
 
 
 ## Advanced
@@ -167,3 +154,37 @@ module.exports = withNextButOne({
     }
 })
 ```
+
+
+## License
+
+Licensed under the MIT License, Copyright © 2019-present Richard Keil
+
+See [LICENSE](./LICENSE) for more information.
+
+
+## Acknowledgements
+
+This project is standing on the shoulders of giants as it is build on top
+of earlier open-source work by clever folks all around the world.
+
+Please check them out:
+
+## Included Libraries
+
+- [@zeit/next-css](https://www.npmjs.com/package/@zeit/next-css)
+- [next-images](https://www.npmjs.com/package/next-images)
+- [next-fonts](https://www.npmjs.com/package/next-fonts)
+- [next-env](https://www.npmjs.com/package/next-env)
+- [dotenv-load](https://www.npmjs.com/package/dotenv-load)
+- [babel-plugin-macros](https://www.npmjs.com/package/babel-plugin-macros)
+- [babel-plugin-module-resolver](https://www.npmjs.com/package/babel-plugin-module-resolver)
+- [@babel/plugin-proposal-export-default-from](https://www.npmjs.com/package/@babel/plugin-proposal-export-default-from)
+- [@babel/plugin-proposal-export-namespace-from](https://www.npmjs.com/package/@babel/plugin-proposal-export-namespace-from)
+- [@babel/plugin-proposal-optional-catch-binding](https://www.npmjs.com/package/@babel/plugin-proposal-optional-catch-binding)
+- [@babel/plugin-proposal-throw-expressions](https://www.npmjs.com/package/@babel/plugin-proposal-throw-expressions)
+- [@babel/plugin-syntax-dynamic-import](https://www.npmjs.com/package/@babel/plugin-syntax-dynamic-import)
+- [@babel/plugin-transform-destructuring](https://www.npmjs.com/package/@babel/plugin-transform-destructuring)
+- [@babel/plugin-transform-runtime](https://www.npmjs.com/package/@babel/plugin-transform-runtime)
+- [@babel/plugin-transform-spread](https://www.npmjs.com/package/@babel/plugin-transform-spread)
+- [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env)
