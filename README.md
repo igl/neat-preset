@@ -4,9 +4,7 @@ next-but-one
 [![npm version](https://img.shields.io/npm/v/next-but-one.svg?style=flat-square)](https://www.npmjs.com/package/next-but-one)
 [![npm downloads](https://img.shields.io/npm/dm/next-but-one.svg?style=flat-square)](https://www.npmjs.com/package/next-but-one)
 
-My highly opinionated plugin-bundle for nextjs applications.
-
-Main features:
+My highly opinionated plugin-bundle for [nextjs](https://nextjs.org/) applications
 
 - Adds webpack file-loader for images and fonts using `next-images` & `next-fonts`
 - Adds dotenv loading behaviour similar to create-react-app
