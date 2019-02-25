@@ -6,8 +6,9 @@ next-but-one
 
 My highly opinionated plugin-bundle for [nextjs](https://nextjs.org/) applications
 
-- Adds webpack file-loader for images and fonts using `next-images` & `next-fonts`
+- Adds dev-expression `__DEV__ = process.env.NODE_ENV !== 'production'`
 - Adds dotenv loading behaviour similar to create-react-app
+- Adds webpack file-loader for images and fonts using `next-images` & `next-fonts`
 - Ships babel presets for server & client. Replacing `next/babel`
 - Adds my favorite babel-proposal plugins! [See list below](#included-libraries)
 
