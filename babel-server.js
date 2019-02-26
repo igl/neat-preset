@@ -9,13 +9,13 @@ module.exports = (context, options = {}) => {
 
     return {
         presets: [
-            [ '@babel/preset-env', presetEnvOptions ]
+            [ require('@babel/preset-env').default, presetEnvOptions ]
         ],
         plugins: [
-            '@babel/plugin-syntax-dynamic-import',
-            '@babel/plugin-transform-destructuring',
-            '@babel/plugin-transform-spread',
-            [ '@babel/plugin-transform-runtime', {
+            require('@babel/plugin-syntax-dynamic-import'),
+            require('@babel/plugin-transform-destructuring'),
+            require('@babel/plugin-transform-spread'),
+            [ require('@babel/plugin-transform-runtime'), {
                 corejs: 2,
                 helpers: true,
                 regenerator: true,

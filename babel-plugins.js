@@ -3,12 +3,12 @@ module.exports = (options = {}) => {
     const moduleResolverOptions = options['module-resolver'] || {}
 
     return [
-        'babel-plugin-macros',
-        '@babel/plugin-proposal-export-default-from',
-        '@babel/plugin-proposal-export-namespace-from',
-        '@babel/plugin-proposal-optional-catch-binding',
-        '@babel/plugin-proposal-throw-expressions',
-        [ 'babel-plugin-transform-define', { __DEV__: process.env.NODE_ENV !== 'production', ...transformDefineOptions } ],
-        [ 'babel-plugin-module-resolver', { root: [ './' ], ...moduleResolverOptions } ]
+        require('babel-plugin-macros'),
+        require('@babel/plugin-proposal-export-default-from'),
+        require('@babel/plugin-proposal-export-namespace-from'),
+        require('@babel/plugin-proposal-optional-catch-binding'),
+        require('@babel/plugin-proposal-throw-expressions'),
+        [ require('babel-plugin-transform-define'), { __DEV__: process.env.NODE_ENV !== 'production', ...transformDefineOptions } ],
+        [ require('babel-plugin-module-resolver'), { root: [ './' ], ...moduleResolverOptions } ]
     ]
 }
