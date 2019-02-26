@@ -1,9 +1,7 @@
-module.exports = (context, options = {})) => {
-    const nextBabel = options['next/babel'] || {}
-
+module.exports = (context, options = {}) => {
     return {
         presets: [
-            [ 'next/babel', nextBabel ]
+            [ 'next/babel', options ]
         ],
         plugins: require('./babel-plugins')(options)
     }
