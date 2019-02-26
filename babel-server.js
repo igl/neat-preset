@@ -1,4 +1,4 @@
-module.exports = (context, options = {})) => {
+module.exports = (context, options = {}) => {
     const presetEnvOptions = {
         useBuiltIns: 'usage',
         targets: {
