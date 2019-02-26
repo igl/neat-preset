@@ -6,11 +6,13 @@ next-but-one
 
 My highly opinionated plugin-bundle for [nextjs](https://nextjs.org/) applications
 
-- Adds dev-expression `__DEV__ = process.env.NODE_ENV !== 'production'`
+- Drop-in replacement for `next/babel`
+- Ships babel presets for server & client.
 - Adds dotenv loading behaviour similar to create-react-app
 - Adds webpack file-loader for images and fonts using `next-images` & `next-fonts`
-- Ships babel presets for server & client. Replacing `next/babel`
-- Adds my favorite babel-proposal plugins! [See list below](#included-libraries)
+- Adds dev-expression `__DEV__ = process.env.NODE_ENV !== 'production'`
+- Must have babel plugins  and export syntax extension
+- Includes my favorite babel plugins like `babel-plugin-macros` and export-syntax extensions [See list below](#included-libraries)
 
 
 ## Usage
@@ -176,6 +178,7 @@ Please check them out:
 - [next-fonts](https://www.npmjs.com/package/next-fonts)
 - [next-env](https://www.npmjs.com/package/next-env)
 - [dotenv-load](https://www.npmjs.com/package/dotenv-load)
+
 - [babel-plugin-macros](https://www.npmjs.com/package/babel-plugin-macros)
 - [babel-plugin-module-resolver](https://www.npmjs.com/package/babel-plugin-module-resolver)
 - [@babel/plugin-proposal-export-default-from](https://www.npmjs.com/package/@babel/plugin-proposal-export-default-from)
