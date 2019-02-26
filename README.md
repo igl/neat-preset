@@ -181,6 +181,7 @@ Please check them out:
 
 - [babel-plugin-macros](https://www.npmjs.com/package/babel-plugin-macros)
 - [babel-plugin-module-resolver](https://www.npmjs.com/package/babel-plugin-module-resolver)
+- [babel-plugin-jsx-control-statements](https://www.npmjs.com/package/babel-plugin-jsx-control-statements)
 - [@babel/plugin-proposal-export-default-from](https://www.npmjs.com/package/@babel/plugin-proposal-export-default-from)
 - [@babel/plugin-proposal-export-namespace-from](https://www.npmjs.com/package/@babel/plugin-proposal-export-namespace-from)
 - [@babel/plugin-proposal-optional-catch-binding](https://www.npmjs.com/package/@babel/plugin-proposal-optional-catch-binding)
