@@ -1,28 +1,24 @@
-next-but-one
+uber-next
 ------------
 
-[![npm version](https://img.shields.io/npm/v/next-but-one.svg?style=flat-square)](https://www.npmjs.com/package/next-but-one)
-[![npm downloads](https://img.shields.io/npm/dm/next-but-one.svg?style=flat-square)](https://www.npmjs.com/package/next-but-one)
+[![npm version](https://img.shields.io/npm/v/uber-next.svg?style=flat-square)](https://www.npmjs.com/package/uber-next)
+[![npm downloads](https://img.shields.io/npm/dm/uber-next.svg?style=flat-square)](https://www.npmjs.com/package/uber-next)
 
-My highly opinionated plugin-bundle for [nextjs](https://nextjs.org/) applications
+My highly opinionated *batteries included* plugin-bundle for [nextjs](https://nextjs.org/) applications
 
 - Drop-in replacement for `next/babel`
-- Ships babel presets for server & client.
-- Adds dotenv loading behaviour similar to create-react-app
-- Adds webpack file-loader for images and fonts using `next-images` & `next-fonts`
-- Adds dev-expression `__DEV__ = process.env.NODE_ENV !== 'production'`
-- Must have babel plugins  and export syntax extension
+- Ships babel presets for the client `uber-next/babel` and server `uber-next/babel-server`
+- Production ready next configuration including `next-images`, `next-fonts` and `next-env`
+- Adds dotenv loading behaviour similar to `create-react-app`
+- Adds global dev-expression (compiling `__DEV__` to `true` or `false` based on your `NODE_ENV` passed to `next build`)
 - Includes my favorite babel plugins like `babel-plugin-macros` and export-syntax extensions [See list below](#included-libraries)
 
 
 ## Usage
 
-Create a `next.config.js`
-
 ```js
 // next.config.js
-const withNextButOne = require('next-but-one')
-module.exports = withNextButOne()
+module.exports = require('uber-next')()
 ```
 
 Create a `.babelrc` for your next app
@@ -30,7 +26,7 @@ Create a `.babelrc` for your next app
 ```js
 {
   "presets": [
-    "next-but-one/babel"
+    "uber-next/babel"
   ]
 }
 ```
@@ -40,7 +36,7 @@ Create a `.babelrc` for your next app
 ```js
 {
   "presets": [
-    "next-but-one/babel-server"
+    "uber-next/babel-server"
   ]
 }
 ```
@@ -49,8 +45,8 @@ Create a `.env`
 
 ```
 NEXT_SERVER_TEST_1=ONLY_ON_SSR
-NEXT_PUBLIC_TEST_1=INJECTED_BY_SSR
-NEXT_STATIC_TEST_1=STATIC_TEXT
+NEXT_PUBLIC_TEST_1=INJECTED_BY_SSR  // available/exposed in the browser
+NEXT_STATIC_TEST_1=STATIC_TEXT      // embedded in the js bundles on build time
 ```
 
 Ignore .env.local files in your `.gitignore`
@@ -72,7 +68,7 @@ Optionally you can pass custom plugin configuration in your `next.config.js` and
 ```js
 {
   "presets": [
-    ["next-but-one/babel", {
+    ["uber-next/babel", {
       "preset-env": {},
       "transform-runtime": {},
       "module-resolver": {},
@@ -89,7 +85,7 @@ Optionally you can pass custom plugin configuration in your `next.config.js` and
 ```js
 {
   "presets": [
-    ["next-but-one/babel", {
+    ["uber-next/babel", {
       "preset-env": {},
       "transform-runtime": {},
       "module-resolver": {},
@@ -108,7 +104,7 @@ With CSS modules and options:
 
 ```js
 // next.config.js
-const withNextButOne = require('next-but-one')
+const withNextButOne = require('uber-next')
 module.exports = withNextButOne({
     css: {
         cssModules: true,

@@ -1,6 +1,8 @@
 module.exports = (options = {}) => {
     const transformDefineOptions = options['transform-define'] || {}
-    const moduleResolverOptions = options['module-resolver'] || {}
+    const moduleResolverOptions = typeof options['module-resolver'] === 'string'
+        ? { root: options['module-resolver'].split(';') }
+        : (options['module-resolver'] || {})
 
     return [
         require('babel-plugin-macros'),

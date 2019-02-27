@@ -1,12 +1,12 @@
 {
-    "name": "next-but-one",
-    "version": "0.5.0",
+    "name": "uber-next",
+    "version": "1.0.0",
     "main": "index.js",
     "license": "MIT",
-    "homepage": "https://github.com/igl/next-but-one",
+    "homepage": "https://github.com/igl/uber-next",
     "repository": {
         "type": "git",
-        "url": "https://github.com/igl/next-but-one"
+        "url": "https://github.com/igl/uber-next"
     },
     "dependencies": {
         "@babel/cli": "7.2.3",
