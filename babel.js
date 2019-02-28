@@ -6,6 +6,18 @@ module.exports = (context, options = {}) => {
         plugins: [
             require('babel-plugin-jsx-control-statements'),
             ...require('./babel-plugins')(options)
-        ]
+        ],
+        env: {
+            development: {
+                plugins: [
+                    [ "styled-components", { "ssr": true, "displayName": true, "preprocess": false } ]
+                ]
+            },
+            production: {
+                plugins: [
+                    [ "styled-components", { "ssr": true, "displayName": false, "preprocess": false } ]
+                ]
+            }
+        }
     }
 }
