@@ -75,6 +75,7 @@ Optionally you can pass custom plugin configuration in your `next.config.js` and
       "styled-jsx": {},
       "class-properties": {}
       "optional-chaining": {}
+      "styled-components": {}
     }]
   ],
   "plugins": []

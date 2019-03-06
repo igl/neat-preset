@@ -1,4 +1,6 @@
 module.exports = (context, options = {}) => {
+    const styledComponentsOptions = options['styled-components'] || {}
+
     return {
         presets: [
             [ require('next/babel'), options ]
@@ -10,12 +12,12 @@ module.exports = (context, options = {}) => {
         env: {
             development: {
                 plugins: [
-                    [ "styled-components", { "ssr": true, "displayName": true, "preprocess": false } ]
+                    [ "styled-components", { "ssr": true, "displayName": true, "preprocess": false, ...styledComponentsOptions } ]
                 ]
             },
             production: {
                 plugins: [
-                    [ "styled-components", { "ssr": true, "displayName": false, "preprocess": false } ]
+                    [ "styled-components", { "ssr": true, "displayName": false, "preprocess": false, ...styledComponentsOptions } ]
                 ]
             }
         }
