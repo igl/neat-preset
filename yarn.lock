@@ -651,10 +651,10 @@
     pirates "^4.0.0"
     source-map-support "^0.5.9"
 
-"@babel/runtime-corejs2@7.3.4":
-  version "7.3.4"
-  resolved "https://registry.yarnpkg.com/@babel/runtime-corejs2/-/runtime-corejs2-7.3.4.tgz#63f8bbc77622da202e9ea6f8f6e3bf28991832d9"
-  integrity sha512-QwPuQE65kNxjsNKk34Rfgen2R5fk0J2So99SD45uXBp34QOfyz11SqVgJ4xvyCpnCIieSQ0X0hSSc9z/ymlJJw==
+"@babel/runtime-corejs2@7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime-corejs2/-/runtime-corejs2-7.1.2.tgz#8695811a3fd8091f54f274b9320334e5e8c62200"
+  integrity sha512-drxaPByExlcRDKW4ZLubUO4ZkI8/8ax9k9wve1aEthdLKFzjB7XRkOQ0xoTIWGxqdDnWDElkjYq77bt7yrcYJQ==
   dependencies:
     core-js "^2.5.7"
     regenerator-runtime "^0.12.0"
@@ -2027,10 +2027,10 @@ next-fonts@0.17.0:
     file-loader "^2.0.0"
     url-loader "^1.1.1"
 
-next-images@1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/next-images/-/next-images-1.0.4.tgz#46d3e5d001ee548f797c4955c005770b54df9f0a"
-  integrity sha512-DUZ3zpQi3tdzEoIvyJisv10TcRoNXRYPd2gLAd8fVCyyxFnsoVNNghjUUwahxEf79BO86J7rj/RMZfEbnAP+1Q==
+next-images@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/next-images/-/next-images-1.1.0.tgz#603b947ea1733654c9e10eb466617a30a0ed3bbf"
+  integrity sha512-SN9meHeX5LUsLhshY9SISLjrxUyF312yeeF2WsL20+DjMPEd2pbQxVqA3dP0Sg66ihFGogM3qmyK5ovaxdRXag==
   dependencies:
     file-loader "^3.0.1"
     url-loader "^1.1.2"

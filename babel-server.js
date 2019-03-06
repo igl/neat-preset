@@ -22,7 +22,7 @@ module.exports = (context, options = {}) => {
                 useESModules: false,
                 ...(options['transform-runtime'] || {})
             }],
-            ...require('./babel-plugins')(options)
+            ...require('./lib/babel-plugins')(options)
         ]
     }
 }

@@ -5,7 +5,7 @@ module.exports = (context, options = {}) => {
         ],
         plugins: [
             require('babel-plugin-jsx-control-statements'),
-            ...require('./babel-plugins')(options)
+            ...require('./lib/babel-plugins')(options)
         ],
         env: {
             development: {
