@@ -3,7 +3,7 @@ module.exports = (context, options = {}) => {
 
     return {
         presets: [
-            [ require('next/babel'), options ]
+            [ 'next/babel', options ]
         ],
         plugins: [
             require('babel-plugin-jsx-control-statements'),
