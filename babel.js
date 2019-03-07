@@ -12,12 +12,12 @@ module.exports = (context, options = {}) => {
         env: {
             development: {
                 plugins: [
-                    [ "styled-components", { "ssr": true, "displayName": true, "preprocess": false, ...styledComponentsOptions } ]
+                    [ require('babel-plugin-styled-components'), { "ssr": true, "displayName": true, "preprocess": false, ...styledComponentsOptions } ]
                 ]
             },
             production: {
                 plugins: [
-                    [ "styled-components", { "ssr": true, "displayName": false, "preprocess": false, ...styledComponentsOptions } ]
+                    [ require('babel-plugin-styled-components'), { "ssr": true, "displayName": false, "preprocess": false, ...styledComponentsOptions } ]
                 ]
             }
         }
