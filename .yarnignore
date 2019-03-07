@@ -1,5 +1,5 @@
 *
-!lib/
+!lib/**
 !babel-server.js
 !babel.js
 !index.js
