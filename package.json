@@ -1,6 +1,7 @@
 {
     "name": "uber-next",
     "version": "1.2.2",
+    "description": "opinionated batteries included plugin-bundle for nextjs applications",
     "main": "index.js",
     "license": "MIT",
     "homepage": "https://github.com/igl/uber-next",
