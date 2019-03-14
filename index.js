@@ -6,6 +6,12 @@ const withImages = require('next-images')
 const withFonts = require('next-fonts')
 const withEnv = require('next-env')
 
+const merge = pluginDefs => nextConfig =>
+    pluginDefs.reduce(
+        (config, [ plugin, options ]) => plugin({ config, ...options }),
+        nextConfig || {}
+    )
+
 module.exports = (options = {}) => {
     const opts = {
         images: {},
@@ -15,11 +21,10 @@ module.exports = (options = {}) => {
         ...options,
     }
 
-    return (nextConfig) => {
-        nextConfig = withCSS({ ...nextConfig, ...opts.css })
-        nextConfig = withImages({ ...nextConfig, ...opts.images })
-        nextConfig = withFonts({ ...nextConfig, ...opts.fonts })
-        nextConfig = withEnv({ ...nextConfig, ...opts.env })
-        return nextConfig
-    }
+    return merge([
+        [ withImages, opts.images ],
+        [ withFonts, opts.fonts ],
+        [ withEnv, opts.env ],
+        [ withCSS, opts.css ],
+    ])
 }
