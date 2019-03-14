@@ -1,0 +1,10 @@
+{
+    "name": "@uber-next/example-custom-server",
+    "version": "0.0.1",
+    "description": "example code",
+    "dependencies": {
+        "next": "8.0.3",
+        "react": "16.8.4",
+        "react-dom": "16.8.4"
+    }
+}
