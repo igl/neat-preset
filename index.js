@@ -1,30 +1,14 @@
-const dotenvLoad = require('dotenv-load')
-dotenvLoad()
+require('dotenv-load')()
 
-const withCSS = require('@zeit/next-css')
+const withEnv = require('next-env')
 const withImages = require('next-images')
 const withFonts = require('next-fonts')
-const withEnv = require('next-env')
+const withCSS = require('@zeit/next-css')
 
-const merge = pluginDefs => nextConfig =>
-    pluginDefs.reduce(
-        (config, [ plugin, options ]) => plugin({ config, ...options }),
-        nextConfig || {}
-    )
-
-module.exports = (options = {}) => {
-    const opts = {
-        images: {},
-        fonts: {},
-        env: {},
-        css: {},
-        ...options,
-    }
-
-    return merge([
-        [ withImages, opts.images ],
-        [ withFonts, opts.fonts ],
-        [ withEnv, opts.env ],
-        [ withCSS, opts.css ],
-    ])
+module.exports = (options = {}) => (nextConfig = {}) => {
+    nextConfig = withEnv({ ...nextConfig, ...options.env })
+    nextConfig = withFonts({ ...nextConfig, ...options.fonts })
+    nextConfig = withImages({ ...nextConfig, ...options.images })
+    nextConfig = withCSS({ ...nextConfig, ...options.css })
+    return nextConfig
 }
