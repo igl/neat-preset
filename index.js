@@ -30,11 +30,16 @@ const withGraphqlLanguageServiceInterfaceFix = (nextConfig = {}) => ({
     },
 })
 
-module.exports = (options = {}) => (nextConfig = {}) => {
-    nextConfig = withEnv(options.env)(nextConfig)()
+module.exports = (options = {}) => (nextConfig = {}) => (phase, args) => {
+    nextConfig = withEnv(options.env)(nextConfig)(phase, args)
     nextConfig = withGraphqlLanguageServiceInterfaceFix(nextConfig)
     nextConfig = withFonts({ ...nextConfig, ...options.fonts })
     nextConfig = withImages({ ...nextConfig, ...options.images })
     nextConfig = withCSS({ ...nextConfig, ...options.css })
+
+    if (typeof nextConfig === 'function') {
+        nextConfig = nextConfig(phase, args)
+    }
+
     return nextConfig
 }
