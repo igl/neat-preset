@@ -18,7 +18,7 @@ My highly opinionated *batteries included* plugin-bundle for [nextjs](https://ne
 
 ```js
 // next.config.js
-module.exports = require('uber-next')()
+module.exports = require('uber-next')()()
 ```
 
 Create a `.babelrc` for your next app
@@ -106,8 +106,7 @@ With CSS modules and options:
 
 ```js
 // next.config.js
-const withNextButOne = require('uber-next')
-module.exports = withNextButOne({
+const withUberNext = require('uber-next')({
     css: {
         cssModules: true,
         cssLoaderOptions: {
@@ -116,42 +115,46 @@ module.exports = withNextButOne({
         }
     }
 })
+
+module.exports = require('uber-next')({
+    target: 'serverless'
+})
 ```
 
 
 With images from a different remote or inlined images with size limit:
 
 ```js
-module.exports = withNextButOne({
+module.exports = require('uber-next')({
     fonts: {
         assetPrefix: 'https://example.com',
         inlineImageLimit: 16384, // default is 8192
     }
-})
+})()
 ```
 
 
 With fonts from a different remote or include SVG fonts:
 
 ```js
-module.exports = withNextButOne({
+module.exports = require('uber-next')({
     fonts: {
         assetPrefix: 'https://example.com',
         enableSvg: true,
     }
-})
+})()
 ```
 
 
 With Custom env variable prefixes:
 
 ```js
-module.exports = withNextButOne({
+module.exports = require('uber-next')({
     env: {
         staticPrefix: 'CUSTOM_STATIC_',
         publicPrefix: 'CUSTOM_PUBLIC_',
     }
-})
+})()
 ```
 
 
