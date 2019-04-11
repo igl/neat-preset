@@ -1,6 +1,7 @@
 module.exports = (context, options = {}) => {
     const presetEnvOptions = {
         useBuiltIns: 'usage',
+        corejs: 3,
         targets: {
             node: 'current'
         },
