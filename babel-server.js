@@ -16,7 +16,7 @@ module.exports = (context, options = {}) => {
             require('@babel/plugin-transform-destructuring'),
             require('@babel/plugin-transform-spread'),
             [ require('@babel/plugin-transform-runtime'), {
-                corejs: 2,
+                corejs: 3,
                 helpers: true,
                 regenerator: true,
                 useESModules: false,
