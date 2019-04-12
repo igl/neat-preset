@@ -1,7 +1,7 @@
 module.exports = (context, options = {}) => {
     const presetEnvOptions = {
         useBuiltIns: 'usage',
-        corejs: 3,
+        corejs: 2,
         targets: {
             node: 'current'
         },
@@ -17,7 +17,7 @@ module.exports = (context, options = {}) => {
             require('@babel/plugin-transform-destructuring'),
             require('@babel/plugin-transform-spread'),
             [ require('@babel/plugin-transform-runtime'), {
-                corejs: 3,
+                corejs: 2,
                 helpers: true,
                 regenerator: true,
                 useESModules: false,
