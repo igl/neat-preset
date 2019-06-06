@@ -1,24 +1,25 @@
-uber-next
-------------
+# neat-preset
 
-[![npm version](https://img.shields.io/npm/v/uber-next.svg?style=flat-square)](https://www.npmjs.com/package/uber-next)
-[![npm downloads](https://img.shields.io/npm/dm/uber-next.svg?style=flat-square)](https://www.npmjs.com/package/uber-next)
+[![npm version](https://img.shields.io/npm/v/neat-preset.svg?style=flat-square)](https://www.npmjs.com/package/neat-preset)
+[![npm downloads](https://img.shields.io/npm/dm/neat-preset.svg?style=flat-square)](https://www.npmjs.com/package/neat-preset)
 
 My highly opinionated *batteries included* plugin-bundle for [nextjs](https://nextjs.org/) applications
 
-- Drop-in replacement for `next/babel`
-- Ships babel presets for the client `uber-next/babel` and server `uber-next/babel-server`
-- Production ready next configuration including `next-images`, `next-fonts` and `next-env`
+- Ships babel presets for the client `neat-preset/babel-next` and server `neat-preset/babel-node`
+- Production ready next configuration including `next-images`, `next-fonts` and `next-env` 
 - Adds dotenv loading behaviour similar to `create-react-app`
 - Adds global dev-expression (compiling `__DEV__` to `true` or `false` based on your `NODE_ENV` passed to `next build`)
 - Includes my favorite babel plugins like `babel-plugin-macros` and export-syntax extensions [See list below](#included-libraries)
 
 
+tl;dr: `neat-preset/next`, `neat-preset/babel-next`, `neat-preset/babel-node`, `neat-preset/dotenv`
+
 ## Usage
+
 
 ```js
 // next.config.js
-module.exports = require('uber-next')()()
+module.exports = require('neat-preset')()()
 ```
 
 Create a `.babelrc` for your next app
@@ -26,7 +27,7 @@ Create a `.babelrc` for your next app
 ```js
 {
   "presets": [
-    "uber-next/babel"
+    "neat-preset/babel"
   ]
 }
 ```
@@ -36,7 +37,7 @@ Create a `.babelrc` for your next app
 ```js
 {
   "presets": [
-    "uber-next/babel-server"
+    "neat-preset/babel-server"
   ]
 }
 ```
@@ -68,7 +69,7 @@ Optionally you can pass custom plugin configuration in your `next.config.js` and
 ```js
 {
   "presets": [
-    ["uber-next/babel", {
+    ["neat-preset/babel", {
       "preset-env": {},
       "transform-runtime": {},
       "module-resolver": {},
@@ -87,7 +88,7 @@ Optionally you can pass custom plugin configuration in your `next.config.js` and
 ```js
 {
   "presets": [
-    ["uber-next/babel", {
+    ["neat-preset/babel", {
       "preset-env": {},
       "transform-runtime": {},
       "module-resolver": {},
@@ -106,7 +107,7 @@ With CSS modules and options:
 
 ```js
 // next.config.js
-const withUberNext = require('uber-next')({
+const withNeat = require('neat-preset/next')({
     css: {
         cssModules: true,
         cssLoaderOptions: {
@@ -116,7 +117,7 @@ const withUberNext = require('uber-next')({
     }
 })
 
-module.exports = require('uber-next')({
+module.exports = require('neat-preset/next')({ ...neatConfig })({
     target: 'serverless'
 })
 ```
@@ -125,36 +126,42 @@ module.exports = require('uber-next')({
 With images from a different remote or inlined images with size limit:
 
 ```js
-module.exports = require('uber-next')({
+module.exports = require('neat-preset/next')({
     fonts: {
         assetPrefix: 'https://example.com',
         inlineImageLimit: 16384, // default is 8192
     }
-})()
+})({
+  target: 'serverless'
+})
 ```
 
 
 With fonts from a different remote or include SVG fonts:
 
 ```js
-module.exports = require('uber-next')({
+module.exports = require('neat-preset/next')({
     fonts: {
         assetPrefix: 'https://example.com',
         enableSvg: true,
     }
-})()
+})({
+  target: 'serverless'
+})
 ```
 
 
 With Custom env variable prefixes:
 
 ```js
-module.exports = require('uber-next')({
+module.exports = require('neat-preset/next')({
     env: {
-        staticPrefix: 'CUSTOM_STATIC_',
-        publicPrefix: 'CUSTOM_PUBLIC_',
+        staticPrefix: 'REACT_APP_STATIC_',
+        publicPrefix: 'REACT_APP_PUBLIC_',
     }
-})()
+})({
+  target: 'serverless'
+})
 ```
 
 

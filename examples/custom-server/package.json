@@ -1,5 +1,5 @@
 {
-    "name": "@uber-next/example-custom-server",
+    "name": "neat-preset-example-app",
     "version": "0.0.1",
     "description": "example code",
     "dependencies": {
