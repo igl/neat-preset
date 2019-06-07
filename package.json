@@ -1,6 +1,6 @@
 {
     "name": "neat-preset",
-    "version": "2.0.0-alpha.1",
+    "version": "2.0.0-alpha.2",
     "description": "opinionated configuration bundle for nextjs & babel based applications",
     "main": "index.js",
     "license": "MIT",
@@ -23,6 +23,7 @@
         "@babel/plugin-transform-runtime": "7.4.4",
         "@babel/plugin-transform-spread": "7.2.2",
         "@babel/preset-env": "7.4.5",
+        "@babel/preset-typescript": "7.3.3",
         "@babel/register": "7.4.4",
         "@babel/runtime-corejs2": "7.4.5",
         "@zeit/next-css": "1.0.1",

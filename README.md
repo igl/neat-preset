@@ -6,7 +6,7 @@
 My highly opinionated *batteries included* plugin-bundle for [nextjs](https://nextjs.org/) applications
 
 - Ships babel presets for the client `neat-preset/babel-next` and server `neat-preset/babel-node`
-- Production ready next configuration including `next-images`, `next-fonts` and `next-env` 
+- Production ready next configuration including `next-images`, `next-fonts` and `next-env`
 - Adds dotenv loading behaviour similar to `create-react-app`
 - Adds global dev-expression (compiling `__DEV__` to `true` or `false` based on your `NODE_ENV` passed to `next build`)
 - Includes my favorite babel plugins like `babel-plugin-macros` and export-syntax extensions [See list below](#included-libraries)
@@ -117,7 +117,7 @@ const withNeat = require('neat-preset/next')({
     }
 })
 
-module.exports = require('neat-preset/next')({ ...neatConfig })({
+module.exports = withNeat({
     target: 'serverless'
 })
 ```
@@ -156,8 +156,8 @@ With Custom env variable prefixes:
 ```js
 module.exports = require('neat-preset/next')({
     env: {
-        staticPrefix: 'REACT_APP_STATIC_',
-        publicPrefix: 'REACT_APP_PUBLIC_',
+        staticPrefix: 'NEXT_APP_STATIC_',
+        publicPrefix: 'NEXT_APP_PUBLIC_',
     }
 })({
   target: 'serverless'
@@ -182,11 +182,14 @@ Please check them out:
 ## Included Libraries
 
 - [@zeit/next-css](https://www.npmjs.com/package/@zeit/next-css)
+- [@zeit/next-typescript](https://www.npmjs.com/package/@zeit/next-typescript)
 - [next-images](https://www.npmjs.com/package/next-images)
 - [next-fonts](https://www.npmjs.com/package/next-fonts)
 - [next-env](https://www.npmjs.com/package/next-env)
 - [dotenv-load](https://www.npmjs.com/package/dotenv-load)
 
+- [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env)
+- [@babel/preset-typescript](https://www.npmjs.com/package/@babel/core)
 - [babel-plugin-macros](https://www.npmjs.com/package/babel-plugin-macros)
 - [babel-plugin-module-resolver](https://www.npmjs.com/package/babel-plugin-module-resolver)
 - [babel-plugin-jsx-control-statements](https://www.npmjs.com/package/babel-plugin-jsx-control-statements)
@@ -200,7 +203,6 @@ Please check them out:
 - [@babel/plugin-transform-runtime](https://www.npmjs.com/package/@babel/plugin-transform-runtime)
 - [@babel/runtime-corejs2](https://www.npmjs.com/package/@babel/runtime-corejs2)
 - [@babel/plugin-transform-spread](https://www.npmjs.com/package/@babel/plugin-transform-spread)
-- [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env)
 - [@babel/register](https://www.npmjs.com/package/@babel/register)
 - [@babel/cli](https://www.npmjs.com/package/@babel/cli)
 - [@babel/core](https://www.npmjs.com/package/@babel/core)

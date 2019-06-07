@@ -1,9 +1,20 @@
 module.exports = (context, options = {}) => {
-    const styledComponentsOptions = options['styled-components'] || {}
+
+    const styledComponentsOptions = {
+        ssr: true,
+        displayName: true, 
+        ...options['styled-components']
+    }
+
+    const presetTypescriptOptions = {
+        isTSX: true,
+        ...options['preset-typescript']
+    }
 
     return {
         presets: [
-            [ 'next/babel', options ]
+            [ require('next/babel'), options ],
+            [ require('@babel/preset-typescript'), presetTypescriptOptions ]
         ],
         plugins: [
             require('babel-plugin-jsx-control-statements'),
@@ -12,14 +23,15 @@ module.exports = (context, options = {}) => {
         env: {
             development: {
                 plugins: [
-                    [ require('babel-plugin-styled-components'), { ssr: true, displayName: true, minify: false, ...styledComponentsOptions } ]
+                    [ require('babel-plugin-styled-components'), { minify: false, ...styledComponentsOptions } ]
                 ]
             },
             production: {
                 plugins: [
-                    [ require('babel-plugin-styled-components'), { ssr: true, displayName: true, minify: true, ...styledComponentsOptions } ]
+                    [ require('babel-plugin-styled-components'), { minify: true, ...styledComponentsOptions } ]
                 ]
             }
         }
     }
+
 }

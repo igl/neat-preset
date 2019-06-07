@@ -10,7 +10,8 @@ module.exports = (context, options = {}) => {
 
     return {
         presets: [
-            [ require('@babel/preset-env').default, presetEnvOptions ]
+            [ require('@babel/preset-env').default, presetEnvOptions ],
+            [ require('@babel/preset-typescript'), { isTSX: truem, ...options['preset-typescript'] } ]
         ],
         plugins: [
             require('@babel/plugin-syntax-dynamic-import'),
