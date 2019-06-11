@@ -1,6 +1,6 @@
 {
     "name": "@neat-preset/next-dev",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "opinionated next configuration preset",
     "license": "MIT",
     "homepage": "https://github.com/igl/neat-preset",
@@ -19,7 +19,7 @@
         "url-loader": "2.0.0"
     },
     "peerDependencies": {
-        "@neat-preset/next": "=> 0.0.1",
+        "@neat-preset/next": "=> 0.0.2",
         "next": "=> 5.1.0"
     }
 }

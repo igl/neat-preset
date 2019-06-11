@@ -8,7 +8,7 @@ require('dotenv-load')()
 
 // config getter
 module.exports = (neatOptions = {}) => {
-    return require('next-env')(neatOptions.env)((phase, { defaultConfig }) => {
+    return require('next-env')(neatOptions.env)((phase, args) => {
         return (nextConfig = {}) => (phase, args) => {
             // Config used to run in production.
             if (phase === PHASE_PRODUCTION_SERVER) {
