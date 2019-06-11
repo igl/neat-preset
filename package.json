@@ -1,6 +1,6 @@
 {
     "name": "neat-preset",
-    "version": "2.0.0-alpha.2",
+    "version": "2.0.0-alpha.3",
     "description": "opinionated configuration bundle for nextjs & babel based applications",
     "main": "index.js",
     "license": "MIT",
