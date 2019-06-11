@@ -1,9 +1,0 @@
-*
-!lib/**
-!babel-server.js
-!babel.js
-!index.js
-!LICENSE
-!package.json
-!README.md
-!yarn.lock

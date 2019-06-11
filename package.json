@@ -1,47 +1,31 @@
 {
-    "name": "neat-preset",
-    "version": "2.0.0-alpha.3",
-    "description": "opinionated configuration bundle for nextjs & babel based applications",
-    "main": "index.js",
+    "name": "neat-preset-packages",
+    "private": true,
     "license": "MIT",
     "homepage": "https://github.com/igl/neat-preset",
     "repository": {
         "type": "git",
         "url": "https://github.com/igl/neat-preset"
     },
-    "dependencies": {
-        "@babel/cli": "7.4.4",
-        "@babel/core": "7.4.5",
-        "@babel/plugin-proposal-export-default-from": "7.2.0",
-        "@babel/plugin-proposal-export-namespace-from": "7.2.0",
-        "@babel/plugin-proposal-optional-catch-binding": "7.2.0",
-        "@babel/plugin-proposal-optional-chaining": "7.2.0",
-        "@babel/plugin-proposal-partial-application": "7.4.4",
-        "@babel/plugin-proposal-throw-expressions": "7.2.0",
-        "@babel/plugin-syntax-dynamic-import": "7.2.0",
-        "@babel/plugin-transform-destructuring": "7.4.4",
-        "@babel/plugin-transform-runtime": "7.4.4",
-        "@babel/plugin-transform-spread": "7.2.2",
-        "@babel/preset-env": "7.4.5",
-        "@babel/preset-typescript": "7.3.3",
-        "@babel/register": "7.4.4",
-        "@babel/runtime-corejs2": "7.4.5",
-        "@zeit/next-css": "1.0.1",
-        "@zeit/next-typescript": "1.1.1",
-        "babel-plugin-jsx-control-statements": "4.0.0",
-        "babel-plugin-macros": "2.6.1",
-        "babel-plugin-module-resolver": "3.2.0",
-        "babel-plugin-styled-components": "1.10.0",
-        "babel-plugin-transform-define": "1.3.1",
-        "dotenv-load": "2.0.0",
-        "file-loader": "4.0.0",
-        "ignore-loader": "0.1.2",
-        "next-env": "1.1.0",
-        "next-fonts": "0.17.0",
-        "next-images": "1.1.1",
-        "url-loader": "2.0.0"
+    "workspaces": {
+        "packages": [
+            "pkgs/*"
+        ]
     },
-    "peerDependencies": {
-        "next": ">= 5.1.0"
+    "prettier": {
+        "tabWidth": 4,
+        "printWidth": 100,
+        "semi": false,
+        "trailingComma": "es5",
+        "bracketSpacing": true,
+        "singleQuote": true,
+        "jsxSingleQuote": true
+    },
+    "dependencies": {
+        "prettier": "1.18.2"
+    },
+    "devDependencies": {
+        "next": "8.1.0",
+        "next-server": "8.1.0"
     }
 }
