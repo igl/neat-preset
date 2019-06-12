@@ -13,6 +13,7 @@
         ]
     },
     "prettier": {
+        "parser": "babel",
         "tabWidth": 4,
         "printWidth": 100,
         "semi": false,
