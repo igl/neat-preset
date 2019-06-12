@@ -6,15 +6,16 @@ const app = next({ dev })
 // Parameterized Routing with next-route
 const routes = require('next-routes')()
 
-routes.add('blog/entry', '/blog/:id')
+routes.add('profile', '/profile/:id')
 
 const handler = routes.getRequestHandler(app)
 
 app.prepare().then(() => {
-    require('http').createServer(handler)
-        .listen(port, (err) => {
+    require('http')
+        .createServer(handler)
+        .listen(port, err => {
             if (err) throw err
             // eslint-disable-next-line no-console
-            console.log(`> Ready on http://localhost:${ port }`)
+            console.log(`> Ready on http://localhost:${port}`)
         })
 })

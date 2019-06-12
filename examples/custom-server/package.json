@@ -1,10 +1,34 @@
 {
-    "name": "neat-preset-example-app",
-    "version": "0.0.1",
-    "description": "example code",
-    "dependencies": {
-        "next": "8.0.3",
-        "react": "16.8.4",
-        "react-dom": "16.8.4"
-    }
+  "name": "neat-preset-example-app",
+  "version": "1.0.0",
+  "description": "example code",
+  "scripts": {
+    "dev": "nodemon -x 'babel-node --config-file ./babel.server.js server/index.js' --quiet --watch server",
+    "build": "next build && babel server -d dist --config --config-file ./babel.server.js",
+    "start": "NODE_ENV=production node dist"
+  },
+  "dependencies": {
+    "@neat-preset/next": "0.0.3",
+    "next": "8.1.0",
+    "next-routes": "1.4.2",
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.4.4",
+    "@babel/node": "7.4.5",
+    "@neat-preset/babel": "0.0.2",
+    "@neat-preset/next-dev": "0.0.3",
+    "nodemon": "1.19.1"
+  },
+  "prettier": {
+    "parser": "babel",
+    "tabWidth": 4,
+    "printWidth": 100,
+    "semi": false,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "singleQuote": true,
+    "jsxSingleQuote": true
+  }
 }
