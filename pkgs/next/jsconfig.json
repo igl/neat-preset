@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "baseUrl": ".",
-        "checkJs": true,
+        "checkJs": false,
         "target": "esnext",
         "moduleResolution": "node",
         "jsx": "preserve" /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */

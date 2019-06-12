@@ -1,6 +1,6 @@
 {
     "name": "@neat-preset/next",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "opinionated next configuration preset",
     "license": "MIT",
     "homepage": "https://github.com/igl/neat-preset",
@@ -9,8 +9,6 @@
         "url": "https://github.com/igl/neat-preset"
     },
     "dependencies": {
-        "@zeit/next-css": "1.0.1",
-        "@zeit/next-typescript": "1.1.1",
         "dotenv-load": "2.0.0",
         "next-env": "1.1.0"
     },

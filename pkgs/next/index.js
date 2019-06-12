@@ -7,19 +7,24 @@ const { PHASE_PRODUCTION_SERVER = null } =
 require('dotenv-load')()
 
 // config getter
-module.exports = (neatOptions = {}) => {
-    return require('next-env')(neatOptions.env)((phase, args) => {
-        return (nextConfig = {}) => (phase, args) => {
-            // Config used to run in production.
-            if (phase === PHASE_PRODUCTION_SERVER) {
-                return {}
+module.exports = (options = {}) => {
+    const withEnv = require('next-env')(options.env)
+
+    return (nextConfig = {}, composePlugins = {}) => {
+        const { nextComposePlugins, phase } = composePlugins
+
+        const nextConfigMethod = (phase, args) => {
+            if (typeof nextConfig === 'function') {
+                nextConfig = nextConfig(phase, args)
             }
 
-            if (typeof nextConfig === 'function') {
-                return nextConfig(phase, args)
+            if (phase === PHASE_PRODUCTION_SERVER) {
+                return nextConfig
             }
 
             return nextConfig
         }
-    })
+
+        return withEnv(nextComposePlugins ? nextConfigMethod(phase) : nextConfigMethod)
+    }
 }
