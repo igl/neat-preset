@@ -13,10 +13,10 @@
         ]
     },
     "devDependencies": {
-        "prettier": "1.19.1"
+        "lerna": "^3.20.2",
+        "prettier": "^1.19.1"
     },
     "prettier": {
-        "parser": "babel",
         "tabWidth": 4,
         "printWidth": 100,
         "semi": false,
