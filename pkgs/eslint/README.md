@@ -24,7 +24,7 @@ Includes plugins compilation for the following environments:
     "root": true,
     "extends": [
       "@neat-preset/eslint/node",
-      "@neat-preset/eslint/ts"
+      "@neat-preset/eslint/typescript"
     ]
   },
 ```
