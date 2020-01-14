@@ -7,6 +7,9 @@
         "type": "git",
         "url": "https://github.com/igl/neat-preset"
     },
+    "scripts": {
+        "bump": "lerna publish --message 'chore(release): :rocket:' --no-commit-hooks --yes"
+    },
     "workspaces": {
         "packages": [
             "pkgs/*"
@@ -16,13 +19,5 @@
         "lerna": "^3.20.2",
         "prettier": "^1.19.1"
     },
-    "prettier": {
-        "tabWidth": 4,
-        "printWidth": 100,
-        "semi": false,
-        "trailingComma": "es5",
-        "bracketSpacing": true,
-        "singleQuote": true,
-        "jsxSingleQuote": true
-    }
+    "prettier": "./prettier.config.js"
 }
