@@ -18,23 +18,7 @@
     "devDependencies": {
         "lerna": "^3.20.2",
         "next": "*",
-        "prettier": "^1.19.1"
+        "prettier": "*"
     },
-    "prettier": "./prettier.config.js",
-    "changelog": {
-        "repo": "plancraft",
-        "cacheDir": "tmp/.changelog",
-        "labels": {
-            "fix": ":fix: Bug Fixes",
-            "feat": ":feat: New Features",
-            "chore": ":broom: House Keeping",
-            "docs": ":pencil: Documentation",
-            "style": ":nail_care: Styling",
-            "refactor": ":construction: Refactored",
-            "test": ":heavy_check_mark: Tests",
-            "build": ":truck: Build",
-            "ci": ":shipit: Release",
-            "revert": ":back: Revert"
-        }
-    }
+    "prettier": "./prettier.config.js"
 }
