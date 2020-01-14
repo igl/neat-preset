@@ -1,7 +1,5 @@
 {
-    "name": "neat-preset-packages",
     "private": true,
-    "license": "MIT",
     "homepage": "https://github.com/igl/neat-preset",
     "repository": {
         "type": "git",
