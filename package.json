@@ -12,6 +12,9 @@
             "pkgs/*"
         ]
     },
+    "devDependencies": {
+        "prettier": "1.19.1"
+    },
     "prettier": {
         "parser": "babel",
         "tabWidth": 4,
@@ -21,12 +24,5 @@
         "bracketSpacing": true,
         "singleQuote": true,
         "jsxSingleQuote": true
-    },
-    "dependencies": {
-        "prettier": "1.18.2"
-    },
-    "devDependencies": {
-        "next": "8.1.0",
-        "next-server": "8.1.0"
     }
 }
