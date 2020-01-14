@@ -1,8 +1,19 @@
+const TARGET_SOURCE_DIR = {
+    default: './src',
+    nextjs: '.',
+}
+
+const PRESET_ENV_TARGETS = {
+    default: '> 5%, not dead',
+    node: { node: 'current' },
+}
+
 exports.presetEnv = (options = {}, target) => {
     const defaultConfig = {
         useBuiltIns: 'usage',
-        corejs: '2',
-        targets: target === 'node' ? { node: 'current' } : '> 1%, not dead',
+        corejs: '3',
+        targets: PRESET_ENV_TARGETS[target] || PRESET_ENV_TARGETS.default,
+        modules: 'commonjs',
     }
 
     const userConfig =
@@ -15,11 +26,12 @@ exports.presetEnv = (options = {}, target) => {
 }
 
 exports.transformRuntime = (options = {}, target) => {
+    const presetEnvConfig = exports.presetEnv(options, target)
     const defaultConfig = {
-        corejs: 2,
+        corejs: Number(presetEnvConfig.corejs),
         helpers: true,
         regenerator: true,
-        useESModules: false,
+        useESModules: presetEnvConfig.modules !== 'commonjs',
     }
 
     const userConfig =
@@ -34,9 +46,13 @@ exports.transformRuntime = (options = {}, target) => {
     }
 }
 
-exports.transformDefine = (options = {}, target) => {
+exports.transformDefine = (options = {}, _target) => {
     const defaultConfig = {
         __DEV__: process.env.NODE_ENV !== 'production',
+        __TEST__:
+            Boolean(process.env.TEST) ||
+            Boolean(process.env.JEST_WORKER_ID) ||
+            process.env.NODE_ENV === 'test',
     }
 
     const userConfig =
@@ -52,26 +68,10 @@ exports.transformDefine = (options = {}, target) => {
     }
 }
 
-exports.optionalChaining = (options = {}, target) => {
-    const defaultConfig = {
-        loose: true,
-    }
-
-    const userConfig =
-        options['@babel/plugin-proposal-optional-chaining'] ||
-        options['optional-chaining'] ||
-        options['optionalChaining'] ||
-        {}
-
-    return {
-        ...defaultConfig,
-        ...userConfig,
-    }
-}
-
 exports.moduleResolver = (options = {}, target) => {
     const defaultConfig = {
-        root: './',
+        root: (TARGET_SOURCE_DIR[target] || TARGET_SOURCE_DIR.default).split(';'),
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.es', '.es6', '.mjs', 'json', 'md', 'mdx'],
     }
 
     const userConfig =
@@ -84,7 +84,16 @@ exports.moduleResolver = (options = {}, target) => {
     // interpret a string-only configuration as 'root' key value
     if (typeof userConfig === 'string' && userConfig /* no empty string */) {
         return {
+            ...defaultConfig,
             root: userConfig.split(';'),
+        }
+    }
+
+    if (typeof userConfig.root === 'string' && userConfig.root && userConfig.root.includes(';')) {
+        return {
+            ...defaultConfig,
+            ...userConfig,
+            root: userConfig.root.split(';'),
         }
     }
 
@@ -94,7 +103,7 @@ exports.moduleResolver = (options = {}, target) => {
     }
 }
 
-exports.typescript = (options = {}, target) => {
+exports.typescript = (options = {}, _target) => {
     const defaultConfig = {
         isTSX: true,
         allExtensions: true,
@@ -112,7 +121,7 @@ exports.typescript = (options = {}, target) => {
     }
 }
 
-exports.styledComponents = (options = {}, target) => {
+exports.styledComponents = (options = {}, _target) => {
     const defaultConfig = {
         ssr: true,
         displayName: true,
@@ -124,6 +133,32 @@ exports.styledComponents = (options = {}, target) => {
         options['babelPluginStyledComponents'] ||
         options['styled-components'] ||
         options['styledComponents'] ||
+        {}
+
+    return {
+        ...defaultConfig,
+        ...userConfig,
+    }
+}
+
+exports.semanticUIImports = (options = {}, target) => {
+    const presetEnvConfig = exports.presetEnv(options, target)
+
+    const defaultConfig = {
+        convertMemberImports: true,
+        importType: presetEnvConfig.modules === 'commonjs' ? 'commonjs' : 'es',
+        addCssImports: target === 'nextjs',
+        importMinifiedCssFiles: false,
+        addLessImports: false,
+        addDuplicateStyleImports: false,
+    }
+
+    const userConfig =
+        options['babel-plugin-transform-semantic-ui-react-imports'] ||
+        options['babelPluginTransformSemanticUIReactImports'] ||
+        options['semantic-ui-react-imports'] ||
+        options['semanticUIReactImports'] ||
+        options['semantic-ui'] ||
         {}
 
     return {

@@ -1,23 +1,24 @@
 module.exports = (context, options = {}) => {
     const configure = require('./configure')
 
-    const presetEnvOptions = configure.presetEnv(options, 'node')
-    const presetTypescriptOptions = configure.typescript(options, 'node')
-    const transformRuntimeOptions = configure.transformRuntime(options, 'node')
-    const transformDefineOptions = configure.transformDefine(options, 'node')
-    const moduleResolverOptions = configure.moduleResolver(options, 'node')
+    const presetEnvOptions = configure.presetEnv(options, 'react')
+    const presetTypescriptOptions = configure.typescript(options, 'react')
+    const styledComponentsOptions = configure.styledComponents(options, 'react')
+    const semanticUIImportsOptions = configure.semanticUIImports(options, 'react')
+    const transformDefineOptions = configure.transformDefine(options, 'react')
+    const moduleResolverOptions = configure.moduleResolver(options, 'react')
 
     return {
         presets: [
+            [require('@babel/preset-react').default],
             [require('@babel/preset-env').default, presetEnvOptions],
             [require('@babel/preset-typescript'), presetTypescriptOptions],
         ],
         plugins: [
-            // stuff that ships with next/babel and we want node-code to have equal features as the next code
-            [require('@babel/plugin-syntax-dynamic-import')],
-            [require('@babel/plugin-transform-destructuring')],
-            [require('@babel/plugin-transform-spread')],
-            [require('@babel/plugin-transform-runtime'), transformRuntimeOptions],
+            // frontend only
+            [require('babel-plugin-jsx-control-statements')],
+            [require('babel-plugin-styled-components'), styledComponentsOptions],
+            [require('babel-plugin-transform-semantic-ui-react-imports'), semanticUIImportsOptions],
 
             // additional babel plugins
             [require('babel-plugin-macros')],
