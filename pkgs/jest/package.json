@@ -1,0 +1,22 @@
+{
+    "name": "@neat-preset/jest",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "lint": "neat-eslint ."
+    },
+    "dependencies": {
+        "babel-jest": "24.9.0",
+        "jest": "24.9.0",
+        "jest-chain": "1.1.2",
+        "jest-extended": "0.11.2"
+    },
+    "prettier": "../../prettier.config.js",
+    "eslintConfig": {
+        "root": true,
+        "extends": "@neat-preset/eslint/node"
+    },
+    "devDependencies": {
+        "@types/jest": "^24.0.23"
+    }
+}
