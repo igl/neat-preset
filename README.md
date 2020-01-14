@@ -72,12 +72,10 @@ With CSS modules and options:
 ```js
 // next.config.js
 const withNeat = require('@neat-preset/next-dev')({
-    css: {
-        cssModules: true,
-        cssLoaderOptions: {
-            importLoaders: 1,
-            localIdentName: '[local]___[hash:base64:5]',
-        },
+    cssModules: true,
+    cssLoaderOptions: {
+        importLoaders: 1,
+        localIdentName: '[local]___[hash:base64:5]',
     },
 })
 
@@ -86,12 +84,12 @@ module.exports = withNeat({
 })
 ```
 
-With images from a different remote or inlined images with size limit:
+With images from a different host and inlined images by size limit:
 
 ```js
 module.exports = require('@neat-preset/next-dev')({
-    fonts: {
-        assetPrefix: 'https://example.com',
+    images: {
+        assetPrefix: 'https://images.example.com',
         inlineImageLimit: 16384, // default is 8192
     },
 })({
@@ -104,7 +102,7 @@ With fonts from a different remote or include SVG fonts:
 ```js
 module.exports = require('@neat-preset/next-dev')({
     fonts: {
-        assetPrefix: 'https://example.com',
+        assetPrefix: 'https://fonts.example.com',
         enableSvg: true,
     },
 })({
@@ -120,6 +118,16 @@ module.exports = require('@neat-preset/next-dev')({
         staticPrefix: 'NEXT_APP_STATIC_',
         publicPrefix: 'NEXT_APP_PUBLIC_',
     },
+})({
+    target: 'serverless',
+})
+```
+
+List `node_modules/` that should be transpiled before being included by webpack
+
+```js
+module.exports = require('@neat-preset/next-dev')({
+    transpileModules: ['somemodule', 'and-another'],
 })({
     target: 'serverless',
 })
