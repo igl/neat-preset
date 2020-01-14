@@ -21,7 +21,6 @@ module.exports = (neatOptions = {}) => {
             const withImages = require('next-images')
             const withFonts = require('next-fonts')
             const withCSS = require('@zeit/next-css')
-            const withTypescript = require('@zeit/next-typescript')
 
             const withGraphqlLanguageServiceInterfaceFix = (nextConfig = {}) => ({
                 ...nextConfig,
@@ -37,7 +36,9 @@ module.exports = (neatOptions = {}) => {
                         new webpack.ContextReplacementPlugin(
                             /graphql-language-service-interface[\\/]dist$/,
                             new RegExp(`^\\./.*\\.js$`)
-                        )
+                        ),
+                        new webpack.IgnorePlugin(/\/__tests__\//),
+                        new webpack.IgnorePlugin(/\/\.(spec|test)\./)
                     )
 
                     if (typeof nextConfig.webpack === 'function') {
@@ -52,7 +53,6 @@ module.exports = (neatOptions = {}) => {
             nextConfig = withFonts({ ...nextConfig, ...neatOptions.fonts })
             nextConfig = withImages({ ...nextConfig, ...neatOptions.images })
             nextConfig = withCSS({ ...nextConfig, ...neatOptions.css })
-            nextConfig = withTypescript({ ...nextConfig, ...neatOptions.typescript })
 
             return nextConfig
         }
