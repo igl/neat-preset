@@ -1,0 +1,32 @@
+{
+    "name": "@neat-preset/eslint",
+    "version": "0.0.0",
+    "description": "eslint config bundle with typescript and stuff",
+    "private": true,
+    "main": "node.js",
+    "bin": {
+        "neat-eslint": "./bin.js"
+    },
+    "scripts": {
+        "lint": "./bin.js ."
+    },
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^2.11.0",
+        "@typescript-eslint/parser": "^2.11.0",
+        "babel-eslint": "10.0.3",
+        "cross-spawn": "7.0.1",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.9.0",
+        "eslint-plugin-import": "^2.19.1",
+        "eslint-plugin-jest": "^23.6.0",
+        "eslint-plugin-jsx-control-statements": "2.2.1",
+        "eslint-plugin-react": "7.17.0",
+        "eslint-plugin-react-hooks": "2.3.0",
+        "minimist": "1.2.0"
+    },
+    "prettier": "../../prettier.config.js",
+    "eslintConfig": {
+        "root": true,
+        "extends": "@neat-preset/eslint/node"
+    }
+}

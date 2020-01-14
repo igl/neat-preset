@@ -1,0 +1,22 @@
+module.exports = {
+    '@typescript-eslint/array-type': 0,
+    '@typescript-eslint/ban-ts-ignore': 'warn',
+    '@typescript-eslint/indent': 0,
+    '@typescript-eslint/member-delimiter-style': 0,
+    '@typescript-eslint/explicit-function-return-type': 0,
+    '@typescript-eslint/prefer-interface': 0,
+    '@typescript-eslint/no-explicit-any': 0,
+    '@typescript-eslint/no-unused-vars': [
+        'error',
+        { argsIgnorePattern: '^_', varsIgnorePattern: '(^log$)|(^_.*)' },
+    ],
+    '@typescript-eslint/no-object-literal-type-assertion': 0,
+    '@typescript-eslint/no-inferrable-types': 0,
+    '@typescript-eslint/camelcase': 0,
+    '@typescript-eslint/interface-name-prefix': 0,
+    '@typescript-eslint/type-annotation-spacing': 0,
+    '@typescript-eslint/explicit-member-accessibility': 0,
+    '@typescript-eslint/no-use-before-define': ['error', { functions: false }],
+    '@typescript-eslint/no-empty-interface': 0,
+    '@typescript-eslint/no-empty-function': 0,
+}
