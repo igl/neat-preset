@@ -20,5 +20,8 @@
     "peerDependencies": {
         "@neat-preset/next": "=> 0.0.2",
         "next": "=> 5.1.0"
+    },
+    "devDependencies": {
+        "next-transpile-modules": "2.3.1"
     }
 }
