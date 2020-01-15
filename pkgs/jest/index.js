@@ -1,9 +1,6 @@
 module.exports = {
-    rootDir: '.',
-    modulePaths: ['<rootDir>'],
-    testMatch: ['**/?(*.)(spec|test).js'],
     modulePathIgnorePatterns: [
-        '<rootDir>/(db|dist|tmp)/.',
+        '<rootDir>/(db|dist|build|release|tmp|temp)/.',
         '<rootDir>/node_modules/(?!(fbjs/lib/|react/lib/|fbjs-scripts/jest))',
         '<rootDir>/node_modules/(?!(@babel/runtime))',
     ],
