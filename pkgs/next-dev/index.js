@@ -54,7 +54,7 @@ module.exports = (neatOptions = {}) => {
             nextConfig = withImages({ ...nextConfig, ...neatOptions.images })
             nextConfig = withFonts({ ...nextConfig, ...neatOptions.fonts })
             nextConfig = withCSS({ ...nextConfig, ...neatOptions })
-            nextConfig = withTM({ ...nextConfig, ...neatoptions })
+            nextConfig = withTM({ ...nextConfig, ...neatOptions })
 
             return nextConfig
         }
