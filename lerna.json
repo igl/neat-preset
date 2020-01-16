@@ -3,22 +3,6 @@
     "npmClient": "yarn",
     "useWorkspaces": true,
     "packages": ["pkgs/*"],
-    "changelog": {
-        "repo": "igl/neat-preset",
-        "cacheDir": "tmp/.changelog",
-        "labels": {
-            "fix": ":fix: Bug Fixes",
-            "feat": ":feat: New Features",
-            "chore": ":broom: House Keeping",
-            "docs": ":pencil: Documentation",
-            "style": ":nail_care: Styling",
-            "refactor": ":construction: Refactored",
-            "test": ":heavy_check_mark: Tests",
-            "build": ":truck: Build",
-            "ci": ":shipit: Release",
-            "revert": ":back: Revert"
-        }
-    },
     "command": {
         "publish": {
             "exact": true,
