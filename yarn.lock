@@ -7858,10 +7858,10 @@ next-env@1.1.0:
   resolved "https://registry.yarnpkg.com/next-env/-/next-env-1.1.0.tgz#15794560d58caad74ac78c8db2f60bbabb0fc452"
   integrity sha512-eSmpCrYzFqjN9en98jEvhz5Bzw5Ui4h8lV/Kua2zOFlD1NU+MG91u90M1WA6+mUnQROYy2Xv0FvVKNbZpeN8Ew==
 
-next-fonts@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/next-fonts/-/next-fonts-1.0.1.tgz#6e04c384a0fe830d9ebe8fb0c10fc14eedbab73c"
-  integrity sha512-BenAFhjNTyrXJog4eL1/6WbCmkyaEWE5f4tfalbML6rfmVceXI10Vr9uUBWg5wWon5tohOb0jopijmI0NtW/PQ==
+next-fonts@0.19.0:
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/next-fonts/-/next-fonts-0.19.0.tgz#0a6d7d8235579d419e55e75a960c17cf19169f51"
+  integrity sha512-1/1GVBtxTEzGA/WYCWetegnVVzSp3tF0aacRY5mc973R6uPogMfid/nkLLlBgFBrFUy8wtv87Sag7vhNNzuSnA==
   dependencies:
     file-loader "^2.0.0"
     url-loader "^1.1.1"
