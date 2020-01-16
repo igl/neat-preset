@@ -15,7 +15,7 @@ module.exports = {
         'import/resolver': {
             node: {
                 moduleDirectory: ['node_modules', '../../node_modules'],
-                extensions: ['.js', '.mjs', '.jsx', '.ts', '.tsx'],
+                extensions: ['.js', '.mjs', '.jsx', '.ts', '.tsx', '.d.ts', '.json'],
             },
         },
     },
