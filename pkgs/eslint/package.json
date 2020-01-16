@@ -19,7 +19,7 @@
         "eslint-plugin-import": "^2.19.1",
         "eslint-plugin-jest": "^23.6.0",
         "eslint-plugin-jsx-control-statements": "2.2.1",
-        "eslint-plugin-react": "7.17.0",
+        "eslint-plugin-react": "7.18.0",
         "eslint-plugin-react-hooks": "2.3.0",
         "minimist": "1.2.0"
     },
