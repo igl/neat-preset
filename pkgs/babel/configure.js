@@ -8,10 +8,15 @@ const PRESET_ENV_TARGETS = {
     node: { node: 'current' },
 }
 
+const COREJS = {
+    default: 3,
+    nextjs: 2,
+}
+
 exports.presetEnv = (options = {}, target) => {
     const defaultConfig = {
         useBuiltIns: 'usage',
-        corejs: '3',
+        corejs: String(COREJS[target]),
         targets: PRESET_ENV_TARGETS[target] || PRESET_ENV_TARGETS.default,
         modules: 'commonjs',
     }
@@ -28,7 +33,7 @@ exports.presetEnv = (options = {}, target) => {
 exports.transformRuntime = (options = {}, target) => {
     const presetEnvConfig = exports.presetEnv(options, target)
     const defaultConfig = {
-        corejs: Number(presetEnvConfig.corejs),
+        corejs: Number(COREJS[target]),
         helpers: true,
         regenerator: true,
         useESModules: presetEnvConfig.modules !== 'commonjs',
