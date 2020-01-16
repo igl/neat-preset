@@ -1,6 +1,6 @@
 {
     "name": "@neat-preset/babel",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "opinionated babel configuration preset",
     "license": "MIT",
     "homepage": "https://github.com/igl/neat-preset",
@@ -36,7 +36,7 @@
         "nodemon": "2.0.2"
     },
     "devDependencies": {
-        "@neat-preset/eslint-config": "^1.0.1"
+        "@neat-preset/eslint-config": "1.1.0"
     },
     "prettier": "../../prettier.config.js",
     "eslintConfig": {
