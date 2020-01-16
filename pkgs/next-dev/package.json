@@ -8,6 +8,9 @@
         "type": "git",
         "url": "https://github.com/igl/neat-preset"
     },
+    "scripts": {
+        "lint": "neat-eslint ."
+    },
     "dependencies": {
         "@zeit/next-css": "1.0.1",
         "ignore-loader": "0.1.2",
@@ -16,11 +19,16 @@
         "next-server": "9.0.5",
         "next-transpile-modules": "2.3.1"
     },
+    "devDependencies": {
+        "@neat-preset/eslint-config": "*"
+    },
     "peerDependencies": {
         "@neat-preset/next": "=> 0.0.2",
         "next": "=> 5.1.0"
     },
-    "devDependencies": {
-        "next-transpile-modules": "2.3.1"
+    "prettier": "../../prettier.config.js",
+    "eslintConfig": {
+        "root": true,
+        "extends": "@neat-preset/eslint-config/node"
     }
 }

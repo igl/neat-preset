@@ -8,6 +8,9 @@
         "type": "git",
         "url": "https://github.com/igl/neat-preset"
     },
+    "scripts": {
+        "lint": "neat-eslint ."
+    },
     "dependencies": {
         "@babel/core": "7.8.3",
         "@babel/plugin-proposal-export-default-from": "7.8.3",
@@ -29,5 +32,13 @@
         "babel-plugin-transform-define": "2.0.0",
         "babel-plugin-transform-semantic-ui-react-imports": "1.4.1",
         "nodemon": "2.0.2"
+    },
+    "devDependencies": {
+        "@neat-preset/eslint-config": "*"
+    },
+    "prettier": "../../prettier.config.js",
+    "eslintConfig": {
+        "root": true,
+        "extends": "@neat-preset/eslint-config/node"
     }
 }

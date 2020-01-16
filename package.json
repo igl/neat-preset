@@ -6,6 +6,7 @@
         "url": "https://github.com/igl/neat-preset"
     },
     "scripts": {
+        "lint": "yarn lerna run --stream --parallel lint",
         "bump": "lerna publish --message 'chore(release): :rocket:' --no-commit-hooks --yes"
     },
     "workspaces": {
