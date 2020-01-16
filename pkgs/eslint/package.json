@@ -1,13 +1,13 @@
 {
-    "name": "@neat-preset/eslint",
-    "version": "0.1.1",
+    "name": "@neat-preset/eslint-config",
+    "version": "1.0.0",
     "description": "eslint config preset",
     "main": "node.js",
     "bin": {
         "neat-eslint": "./bin.js"
     },
     "scripts": {
-        "lint": "./bin.js ."
+        "lint": "neat-eslint ."
     },
     "dependencies": {
         "@typescript-eslint/eslint-plugin": "^2.11.0",
@@ -26,6 +26,6 @@
     "prettier": "../../prettier.config.js",
     "eslintConfig": {
         "root": true,
-        "extends": "@neat-preset/eslint/node"
+        "extends": "./node"
     }
 }

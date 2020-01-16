@@ -10,7 +10,7 @@ const ESLINT = path.resolve(__dirname, './node_modules/.bin/eslint')
 const target = argv._[0]
 const otherArgs = argv._.slice(1)
 const maxWarnings = argv['max-warnings'] || '10'
-const extensions = argv['ext'] || '.js,.jsx,.ts,.tsx'
+const extensions = argv['ext'] || '.js,.mjs,.jsx,.ts,.tsx'
 
 const callArgs = [
     ...otherArgs,
