@@ -7,7 +7,8 @@
     },
     "scripts": {
         "lint": "yarn lerna run --stream --parallel lint",
-        "bump": "lerna publish --no-commit-hooks --yes"
+        "bump": "lerna publish --no-commit-hooks --yes",
+        "up": "yarn upgrade-interactive --latest"
     },
     "workspaces": {
         "packages": [
