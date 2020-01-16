@@ -20,6 +20,22 @@
         }
     },
     "command": {
+        "publish": {
+            "exact": true,
+            "conventionalCommits": true,
+            "ignoreChanges": [
+                "**/tmp/**",
+                "pkgs/**/dist/**",
+                "pkgs/**/test/**",
+                "pkgs/**/tests/**",
+                "pkgs/**/__fixtures__/**",
+                "pkgs/**/__mocks__/**",
+                "pkgs/**/__tests__/**",
+                "**/*.md",
+                "**/*.spec.ts",
+                "**/*.spec.js"
+            ]
+        },
         "version": {
             "allowBranch": ["master"]
         }
