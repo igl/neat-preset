@@ -21,7 +21,8 @@
             ]
         },
         "version": {
-            "allowBranch": ["master"]
+            "allowBranch": ["master"],
+            "message": "chore(release): published %s :rocket:"
         }
     }
 }

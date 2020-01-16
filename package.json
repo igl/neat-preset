@@ -7,7 +7,7 @@
     },
     "scripts": {
         "lint": "yarn lerna run --stream --parallel lint",
-        "bump": "lerna publish --message 'chore(release): :rocket:' --no-commit-hooks --yes"
+        "bump": "lerna publish --no-commit-hooks --yes"
     },
     "workspaces": {
         "packages": [
