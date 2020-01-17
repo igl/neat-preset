@@ -1,6 +1,6 @@
 {
     "name": "@neat-preset/next",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "opinionated next configuration preset",
     "license": "MIT",
     "homepage": "https://github.com/igl/neat-preset",
@@ -17,7 +17,7 @@
         "next-env": "1.1.0"
     },
     "devDependencies": {
-        "@neat-preset/eslint-config": "1.1.0"
+        "@neat-preset/eslint-config": "1.1.1"
     },
     "peerDependencies": {
         "next": "=> 5.1.0",
