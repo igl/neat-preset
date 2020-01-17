@@ -5,7 +5,6 @@
     "packages": ["pkgs/*"],
     "command": {
         "publish": {
-            "exact": true,
             "conventionalCommits": true,
             "ignoreChanges": [
                 "**/tmp/**",
