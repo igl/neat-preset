@@ -8,12 +8,17 @@
         "type": "git",
         "url": "https://github.com/igl/neat-preset"
     },
+    "bin": {
+        "neat-babel": "./bin-babel.js",
+        "neat-babel-node": "./bin-babel-node.js"
+    },
     "scripts": {
         "lint": "neat-eslint ."
     },
     "dependencies": {
         "@babel/cli": "7.8.3",
         "@babel/core": "7.8.3",
+        "@babel/node": "7.8.3",
         "@babel/plugin-proposal-export-default-from": "7.8.3",
         "@babel/plugin-proposal-export-namespace-from": "7.8.3",
         "@babel/plugin-proposal-nullish-coalescing-operator": "7.8.3",
