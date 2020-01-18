@@ -10,10 +10,10 @@ const PRESET_ENV_TARGETS = {
 
 const COREJS = {
     default: 3,
-    nextjs: 2,
+    nextjs: 3,
 }
 
-const getOption = (o, k) => o[k ? k : 'default']
+const getOption = (o, k) => o[k] || o.default
 
 exports.presetEnv = (options = {}, target) => {
     const defaultConfig = {
