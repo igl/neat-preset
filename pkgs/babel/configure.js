@@ -13,11 +13,13 @@ const COREJS = {
     nextjs: 2,
 }
 
+const getOption = (o, k) => o[k ? k : 'default']
+
 exports.presetEnv = (options = {}, target) => {
     const defaultConfig = {
         useBuiltIns: 'usage',
-        corejs: String(COREJS[target]),
-        targets: PRESET_ENV_TARGETS[target] || PRESET_ENV_TARGETS.default,
+        corejs: String(getOption(COREJS, target)),
+        targets: getOption(PRESET_ENV_TARGETS, target),
         modules: 'commonjs',
     }
 
@@ -75,7 +77,7 @@ exports.transformDefine = (options = {}, _target) => {
 
 exports.moduleResolver = (options = {}, target) => {
     const defaultConfig = {
-        root: (TARGET_SOURCE_DIR[target] || TARGET_SOURCE_DIR.default).split(';'),
+        root: getOption(TARGET_SOURCE_DIR, target).split(';'),
         extensions: ['.js', '.jsx', '.ts', '.tsx', '.es', '.es6', '.mjs', 'json', 'md', 'mdx'],
     }
 
