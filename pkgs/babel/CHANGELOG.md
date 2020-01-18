@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.1.1...@neat-preset/babel@1.1.2) (2020-01-18)
+
+
+### Bug Fixes
+
+* var look up resulting in undefined ([c5b9132](https://github.com/igl/neat-preset/commit/c5b91327a8f8baca01cfdfc507e5e633b3e443c6))
+
+
+
+
+
 ## [1.1.1](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.1.0...@neat-preset/babel@1.1.1) (2020-01-18)
 
 **Note:** Version bump only for package @neat-preset/babel
