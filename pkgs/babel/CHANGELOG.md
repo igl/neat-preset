@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.1.2...@neat-preset/babel@1.2.0) (2020-01-20)
+
+
+### Features
+
+* removed ECMA-2020 plugins that are bundled with babel v7.8 ([d30b6cf](https://github.com/igl/neat-preset/commit/d30b6cf1b2890c9cc1619218908ef4f324981e65))
+
+
+
+
+
 ## [1.1.2](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.1.1...@neat-preset/babel@1.1.2) (2020-01-18)
 
 
