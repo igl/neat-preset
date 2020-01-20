@@ -12,7 +12,6 @@ lint-report.xml
 Thumbs.db
 .env.local
 .env.*.local
-.vscode
 .next
 .vagrant
 .cache
