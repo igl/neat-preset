@@ -22,11 +22,8 @@ module.exports = (context, options = {}) => {
 
             // additional babel plugins
             [require('babel-plugin-macros')],
-            [require('@babel/plugin-proposal-nullish-coalescing-operator')],
             [require('@babel/plugin-proposal-export-default-from')],
             [require('@babel/plugin-proposal-export-namespace-from')],
-            [require('@babel/plugin-proposal-optional-catch-binding')],
-            [require('@babel/plugin-proposal-optional-chaining')],
             [require('@babel/plugin-proposal-throw-expressions')],
             [require('babel-plugin-transform-define'), transformDefineOptions],
             [require('babel-plugin-module-resolver'), moduleResolverOptions],
