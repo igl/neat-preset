@@ -10,7 +10,6 @@ const PRESET_ENV_TARGETS = {
 
 const COREJS = {
     default: 3,
-    nextjs: 3,
 }
 
 const getOption = (o, k) => o[k] || o.default
