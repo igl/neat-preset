@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.8](https://github.com/igl/neat-preset/compare/@neat-preset/next-dev@2.0.7...@neat-preset/next-dev@2.0.8) (2020-01-27)
+
+
+### Bug Fixes
+
+* change next-transpile-modules new interface ([2e9faa3](https://github.com/igl/neat-preset/commit/2e9faa39245989d5bfe58681f4a4ef6763dba50a))
+
+
+
+
+
 ## [2.0.7](https://github.com/igl/neat-preset/compare/@neat-preset/next-dev@2.0.6...@neat-preset/next-dev@2.0.7) (2020-01-27)
 
 **Note:** Version bump only for package @neat-preset/next-dev
