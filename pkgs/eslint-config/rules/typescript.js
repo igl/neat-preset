@@ -7,7 +7,7 @@ module.exports = {
     '@typescript-eslint/prefer-interface': 0,
     '@typescript-eslint/no-explicit-any': 0,
     '@typescript-eslint/no-unused-vars': [
-        'error',
+        'warn',
         { argsIgnorePattern: '^_', varsIgnorePattern: '(^log$)|(^_.*)' },
     ],
     '@typescript-eslint/no-object-literal-type-assertion': 0,
