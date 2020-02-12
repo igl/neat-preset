@@ -5,7 +5,7 @@
         "lint": "neat-eslint ."
     },
     "dependencies": {
-        "@types/jest": "25.1.1",
+        "@types/jest": "25.1.2",
         "babel-jest": "25.1.0",
         "jest": "25.1.0",
         "jest-chain": "1.1.5",
