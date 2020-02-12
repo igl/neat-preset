@@ -9,7 +9,7 @@ const PRESET_ENV_TARGETS = {
 }
 
 const COREJS = {
-    default: 3,
+    default: 2,
 }
 
 const getOption = (o, k) => o[k] || o.default
