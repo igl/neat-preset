@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.3](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.2.2...@neat-preset/babel@1.2.3) (2020-02-12)
+
+
+### Bug Fixes
+
+* downgrade to corejs to v2 again ([375376b](https://github.com/igl/neat-preset/commit/375376b83a892f6536320e87a06ac2f81553a568))
+
+
+
+
+
 ## [1.2.2](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.2.1...@neat-preset/babel@1.2.2) (2020-02-03)
 
 **Note:** Version bump only for package @neat-preset/babel
