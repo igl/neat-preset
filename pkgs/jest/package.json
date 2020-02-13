@@ -1,11 +1,13 @@
 {
     "name": "@neat-preset/jest",
     "version": "0.0.9",
+    "types": "index.d.ts",
     "scripts": {
         "lint": "neat-eslint ."
     },
     "dependencies": {
         "@types/jest": "25.1.2",
+        "@types/node": "13.7.1",
         "babel-jest": "25.1.0",
         "jest": "25.1.0",
         "jest-chain": "1.1.5",
