@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.2.3...@neat-preset/babel@1.3.0) (2020-02-13)
+
+
+### Features
+
+* **babel:** added tsc for --declaration compilation option ([53f0be5](https://github.com/igl/neat-preset/commit/53f0be5b1b5b332042f3122a7a0edc454a076f47))
+
+
+
+
+
 ## [1.2.3](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.2.2...@neat-preset/babel@1.2.3) (2020-02-12)
 
 
