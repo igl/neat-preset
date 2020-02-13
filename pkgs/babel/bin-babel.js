@@ -7,10 +7,13 @@ const minimist = require('minimist')
 const argv = minimist(process.argv.slice(2))
 
 const BABEL = path.resolve(__dirname, './node_modules/.bin/babel')
+const TSC = path.resolve(__dirname, './node_modules/.bin/tsc')
+
 const source = argv._[0]
 const otherArgs = argv._.slice(1)
 const outDir = argv['out-dir'] || argv.d || 'dist'
 const extensions = argv.extensions || argv.x || '.js,.jsx,.ts,.tsx'
+const declaration = Boolean(argv.declaration)
 const ignore =
     argv.ignore ||
     '"**/node_modules/**",' +
@@ -19,7 +22,7 @@ const ignore =
         '"**/*.story.js","**/*.story.jsx","**/*.story.ts","**/*.story.tsx",' +
         '"**/*.stories.js","**/*.stories.jsx","**/*.stories.ts","**/*.stories.tsx"'
 
-const callArgs = [
+const babelCallArgs = [
     source,
     '--out-dir',
     outDir,
@@ -31,8 +34,23 @@ const callArgs = [
     ...otherArgs,
 ]
 
-// console.log(`$ ${BABEL} ${callArgs.join(' ')}`)
+const tscCallArgs = ['--declaration', '--emitDeclarationOnly', '--outDir', outDir]
 
-spawn(BABEL, callArgs, { stdio: 'inherit' }).on('exit', exitCode => {
-    process.exit(exitCode || 0)
-})
+// console.log(`$ ${BABEL} ${babelCallArgs.join(' ')}`)
+let collectedExitCodes = []
+
+function taskDone(code) {
+    // after collecting 2 exit codes we quit with the highest code
+    if (collectedExitCodes.push(code) === 2) {
+        process.exit(Math.max(...collectedExitCodes))
+    }
+}
+
+spawn(BABEL, babelCallArgs, { stdio: 'inherit' }).on('exit', taskDone)
+
+// emit declaration files too
+if (declaration) {
+    spawn(TSC, tscCallArgs, { stdio: 'inherit' }).on('exit', taskDone)
+} else {
+    collectedExitCodes.push(0)
+}

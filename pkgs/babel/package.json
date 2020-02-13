@@ -36,7 +36,8 @@
         "babel-plugin-styled-components": "1.10.7",
         "babel-plugin-transform-define": "2.0.0",
         "babel-plugin-transform-semantic-ui-react-imports": "1.4.1",
-        "nodemon": "2.0.2"
+        "nodemon": "2.0.2",
+        "typescript": "3.7.5"
     },
     "devDependencies": {
         "@neat-preset/eslint-config": "^1.1.4"
