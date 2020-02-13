@@ -12,6 +12,7 @@
         "lint": "neat-eslint ."
     },
     "dependencies": {
+        "@neat-preset/next": "1.0.6",
         "@zeit/next-css": "1.0.1",
         "ignore-loader": "0.1.2",
         "next-fonts": "1.0.3",
@@ -23,7 +24,6 @@
         "@neat-preset/eslint-config": "^1.1.4"
     },
     "peerDependencies": {
-        "@neat-preset/next": "=> 0.0.2",
         "next": "=> 5.1.0"
     },
     "prettier": "../../prettier.config.js",
