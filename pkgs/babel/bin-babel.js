@@ -13,7 +13,7 @@ const source = argv._[0]
 const otherArgs = argv._.slice(1)
 const outDir = argv['out-dir'] || argv.d || 'dist'
 const extensions = argv.extensions || argv.x || '.js,.jsx,.ts,.tsx'
-const declaration = Boolean(argv.declaration)
+const declarations = Boolean(argv.declarations)
 const ignore =
     argv.ignore ||
     '"**/node_modules/**",' +
@@ -49,7 +49,7 @@ function taskDone(code) {
 spawn(BABEL, babelCallArgs, { stdio: 'inherit' }).on('exit', taskDone)
 
 // emit declaration files too
-if (declaration) {
+if (declarations) {
     spawn(TSC, tscCallArgs, { stdio: 'inherit' }).on('exit', taskDone)
 } else {
     collectedExitCodes.push(0)
