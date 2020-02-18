@@ -4,21 +4,13 @@ module.exports = (context, options = {}) => {
     const styledComponentsOptions = configure.styledComponents(options, 'nextjs')
     const semanticUIImportsOptions = configure.semanticUIImports(options, 'nextjs')
     const transformDefineOptions = configure.transformDefine(options, 'nextjs')
-    const presetEnvOptions = configure.presetEnv(options, 'nextjs')
-    const transformRuntimeOptions = configure.transformRuntime(options, 'nextjs')
     const moduleResolverOptions = configure.moduleResolver(options, 'nextjs')
 
     return {
         presets: [
             // should be a peer-dep
             // eslint-disable-next-line import/no-unresolved
-            [
-                require('next/babel'),
-                {
-                    'preset-env': presetEnvOptions,
-                    'transform-runtime': transformRuntimeOptions,
-                },
-            ],
+            [require('next/babel')],
         ],
         plugins: [
             // frontend only
