@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.2](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.3.1...@neat-preset/babel@1.3.2) (2020-02-18)
+
+
+### Bug Fixes
+
+* remove babel/next tweaks ([b3fbc03](https://github.com/igl/neat-preset/commit/b3fbc0348464685c7fe23676c99b4ad3887cd9a7))
+
+
+
+
+
 ## [1.3.1](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.3.0...@neat-preset/babel@1.3.1) (2020-02-17)
 
 **Note:** Version bump only for package @neat-preset/babel
