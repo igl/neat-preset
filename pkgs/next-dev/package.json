@@ -1,6 +1,6 @@
 {
     "name": "@neat-preset/next-dev",
-    "version": "2.0.13",
+    "version": "2.0.14",
     "description": "opinionated next configuration preset",
     "license": "MIT",
     "homepage": "https://github.com/igl/neat-preset",
@@ -12,7 +12,7 @@
         "lint": "neat-eslint ."
     },
     "dependencies": {
-        "@neat-preset/next": "1.0.6",
+        "@neat-preset/next": "^1.0.7",
         "@zeit/next-css": "1.0.1",
         "ignore-loader": "0.1.2",
         "next-fonts": "1.0.3",
@@ -21,7 +21,7 @@
         "next-transpile-modules": "3.0.2"
     },
     "devDependencies": {
-        "@neat-preset/eslint-config": "^1.1.4"
+        "@neat-preset/eslint-config": "^1.1.5"
     },
     "peerDependencies": {
         "next": "=> 5.1.0"
