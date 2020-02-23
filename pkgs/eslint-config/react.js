@@ -3,6 +3,7 @@ module.exports = {
     plugins: ['react', 'react-hooks', 'jsx-control-statements'],
     env: {
         browser: true,
+        'jsx-control-statements/jsx-control-statements': true,
     },
     rules: {
         ...require('./rules/defaults'),
