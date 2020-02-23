@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.6](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.1.5...@neat-preset/eslint-config@1.1.6) (2020-02-23)
+
+
+### Bug Fixes
+
+* jsx-control-statements missing in config.env ([aff91a6](https://github.com/igl/neat-preset/commit/aff91a6ca3ad8accad576deff13ccf94e2e574c4))
+
+
+
+
+
 ## [1.1.5](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.1.4...@neat-preset/eslint-config@1.1.5) (2020-02-18)
 
 **Note:** Version bump only for package @neat-preset/eslint-config
