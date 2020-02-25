@@ -128,10 +128,11 @@ exports.typescript = (options = {}, _target) => {
 }
 
 exports.styledComponents = (options = {}, _target) => {
+    const isProduction = process.env.NODE_ENV === 'production'
     const defaultConfig = {
-        ssr: true,
-        displayName: true,
-        minify: process.env.NODE_ENV === 'production',
+        ssr: isProduction,
+        displayName: !isProduction,
+        minify: isProduction,
     }
 
     const userConfig =
