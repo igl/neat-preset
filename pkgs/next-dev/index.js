@@ -20,7 +20,6 @@ module.exports = (neatOptions = {}) => {
 
             const withImages = require('next-images')
             const withFonts = require('next-fonts')
-            const withCSS = require('@zeit/next-css')
             const withTM = require('next-transpile-modules')(neatOptions.transpileModules || [])
 
             const withGraphqlLanguageServiceInterfaceFix = (nextConfig = {}) => ({
@@ -53,7 +52,6 @@ module.exports = (neatOptions = {}) => {
             nextConfig = withGraphqlLanguageServiceInterfaceFix(nextConfig)
             nextConfig = withImages({ ...nextConfig, ...neatOptions.images })
             nextConfig = withFonts({ ...nextConfig, ...neatOptions.fonts })
-            nextConfig = withCSS({ ...nextConfig, ...neatOptions })
             nextConfig = withTM({ ...nextConfig, ...neatOptions })
 
             return nextConfig

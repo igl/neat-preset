@@ -67,23 +67,6 @@ Ignore .env.local files in your `.gitignore`
 
 ### `next.config.js`
 
-With CSS modules and options:
-
-```js
-// next.config.js
-const withNeat = require('@neat-preset/next-dev')({
-    cssModules: true,
-    cssLoaderOptions: {
-        importLoaders: 1,
-        localIdentName: '[local]___[hash:base64:5]',
-    },
-})
-
-module.exports = withNeat({
-    target: 'serverless',
-})
-```
-
 With images from a different host and inlined images by size limit:
 
 ```js
@@ -148,11 +131,11 @@ Please check them out:
 
 ## Included Libraries
 
--   [@zeit/next-css](https://www.npmjs.com/package/@zeit/next-css)
 -   [@zeit/next-typescript](https://www.npmjs.com/package/@zeit/next-typescript)
 -   [next-images](https://www.npmjs.com/package/next-images)
 -   [next-fonts](https://www.npmjs.com/package/next-fonts)
 -   [next-env](https://www.npmjs.com/package/next-env)
+-   [next-transpile-modules](https://www.npmjs.com/package/next-transpile-modules)
 -   [dotenv-load](https://www.npmjs.com/package/dotenv-load)
 
 -   [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env)
@@ -160,4 +143,5 @@ Please check them out:
 -   [@babel/register](https://www.npmjs.com/package/@babel/register)
 -   [@babel/cli](https://www.npmjs.com/package/@babel/cli)
 -   [@babel/core](https://www.npmjs.com/package/@babel/core)
+-   [@babel/runtime](https://www.npmjs.com/package/@babel/core)
 -   [and more...](./pkgs/babel/package.json)...
