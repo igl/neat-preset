@@ -147,29 +147,3 @@ exports.styledComponents = (options = {}, _target) => {
         ...userConfig,
     }
 }
-
-exports.semanticUIImports = (options = {}, target) => {
-    const presetEnvConfig = exports.presetEnv(options, target)
-
-    const defaultConfig = {
-        convertMemberImports: true,
-        importType: presetEnvConfig.modules === 'commonjs' ? 'commonjs' : 'es',
-        addCssImports: target === 'nextjs',
-        importMinifiedCssFiles: false,
-        addLessImports: false,
-        addDuplicateStyleImports: false,
-    }
-
-    const userConfig =
-        options['babel-plugin-transform-semantic-ui-react-imports'] ||
-        options['babelPluginTransformSemanticUIReactImports'] ||
-        options['semantic-ui-react-imports'] ||
-        options['semanticUIReactImports'] ||
-        options['semantic-ui'] ||
-        {}
-
-    return {
-        ...defaultConfig,
-        ...userConfig,
-    }
-}

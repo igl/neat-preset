@@ -4,7 +4,6 @@ module.exports = (context, options = {}) => {
     const presetEnvOptions = configure.presetEnv(options, 'react')
     const presetTypescriptOptions = configure.typescript(options, 'react')
     const styledComponentsOptions = configure.styledComponents(options, 'react')
-    const semanticUIImportsOptions = configure.semanticUIImports(options, 'react')
     const transformDefineOptions = configure.transformDefine(options, 'react')
     const moduleResolverOptions = configure.moduleResolver(options, 'react')
 
@@ -18,7 +17,6 @@ module.exports = (context, options = {}) => {
             // frontend only
             [require('babel-plugin-jsx-control-statements')],
             [require('babel-plugin-styled-components'), styledComponentsOptions],
-            [require('babel-plugin-transform-semantic-ui-react-imports'), semanticUIImportsOptions],
 
             // additional babel plugins
             [require('babel-plugin-macros')],

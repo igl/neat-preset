@@ -2,7 +2,6 @@ module.exports = (context, options = {}) => {
     const configure = require('./configure')
 
     const styledComponentsOptions = configure.styledComponents(options, 'nextjs')
-    const semanticUIImportsOptions = configure.semanticUIImports(options, 'nextjs')
     const transformDefineOptions = configure.transformDefine(options, 'nextjs')
     const moduleResolverOptions = configure.moduleResolver(options, 'nextjs')
 
@@ -16,7 +15,6 @@ module.exports = (context, options = {}) => {
             // frontend only
             [require('babel-plugin-jsx-control-statements')],
             [require('babel-plugin-styled-components'), styledComponentsOptions],
-            [require('babel-plugin-transform-semantic-ui-react-imports'), semanticUIImportsOptions],
 
             // additional babel plugins
             [require('babel-plugin-macros')],
