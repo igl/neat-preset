@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/igl/neat-preset/compare/@neat-preset/next-dev@2.0.16...@neat-preset/next-dev@2.1.0) (2020-03-03)
+
+
+### Features
+
+* removed next-css (next has built-in css support now) ([889577c](https://github.com/igl/neat-preset/commit/889577ccc053023b5f44cc83d0365e755d1c0fb7))
+
+
+
+
+
 ## [2.0.16](https://github.com/igl/neat-preset/compare/@neat-preset/next-dev@2.0.15...@neat-preset/next-dev@2.0.16) (2020-02-25)
 
 **Note:** Version bump only for package @neat-preset/next-dev
