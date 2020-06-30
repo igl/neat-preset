@@ -4,7 +4,7 @@ const TARGET_SOURCE_DIR = {
 }
 
 const PRESET_ENV_TARGETS = {
-    default: '> 5%, not dead',
+    default: undefined,
     node: { node: 'current' },
 }
 
