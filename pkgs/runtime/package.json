@@ -1,0 +1,26 @@
+{
+    "name": "@neat-preset/runtime",
+    "version": "0.0.1",
+    "description": "opinionated next configuration preset",
+    "license": "MIT",
+    "homepage": "https://github.com/igl/neat-preset",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/igl/neat-preset"
+    },
+    "scripts": {
+        "lint": "neat-eslint ."
+    },
+    "dependencies": {
+        "@babel/runtime": "7.10.3",
+        "@babel/runtime-corejs2": "7.10.4",
+        "dotenv-load": "2.0.0"
+    },
+    "devDependencies": {
+        "@neat-preset/eslint-config": "^1.1.9"
+    },
+    "eslintConfig": {
+        "root": true,
+        "extends": "@neat-preset/eslint-config/node"
+    }
+}
