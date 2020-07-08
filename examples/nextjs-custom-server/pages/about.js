@@ -4,10 +4,10 @@ const add = (a, b) => a + b
 
 const add100 = add(?, 100)
 
-export default props => (
+export default (props) => (
     <div>
         <h1>About</h1>
-        <Link href='/about' prefetch>
+        <Link href='/about'>
             <a>About Page</a>
         </Link>
         <br />

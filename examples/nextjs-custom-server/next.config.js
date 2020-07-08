@@ -1,6 +1,5 @@
 const nextConfig = {
     target: 'serverless',
-    distDir: '../.next',
 }
 
 const { PHASE_PRODUCTION_SERVER } = require('@neat-preset/next/constants')

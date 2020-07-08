@@ -1,0 +1,40 @@
+{
+    "name": "neat-preset-example-babel",
+    "version": "1.0.0",
+    "description": "example code",
+    "scripts": {
+        "dev": "nodemon -x 'babel-node --config-file ./babel.server.js server/index.js' --quiet --watch server",
+        "build": "babel src",
+        "start": "NODE_ENV=production node dist",
+        "up": "yarn upgrade-interactive --latest"
+    },
+    "dependencies": {
+        "@neat-preset/next": "1.0.11",
+        "next": "9.4.4",
+        "next-routes": "1.4.2",
+        "react": "16.13.1",
+        "react-dom": "16.13.1"
+    },
+    "devDependencies": {
+        "@babel/cli": "7.10.4",
+        "@babel/node": "7.10.4",
+        "@neat-preset/babel": "file:../../pkgs/babel",
+        "@neat-preset/next-dev": "file:../../pkgs/next-dev",
+        "nodemon": "2.0.4"
+    },
+    "prettier": {
+        "parser": "babel",
+        "tabWidth": 4,
+        "printWidth": 100,
+        "semi": false,
+        "trailingComma": "es5",
+        "bracketSpacing": true,
+        "singleQuote": true,
+        "jsxSingleQuote": true
+    },
+    "babel": {
+        "presets": [
+            "@neat-preset/babel/nextjs"
+        ]
+    }
+}
