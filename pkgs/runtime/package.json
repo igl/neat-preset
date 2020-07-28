@@ -1,6 +1,6 @@
 {
     "name": "@neat-preset/runtime",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "opinionated next configuration preset",
     "license": "MIT",
     "homepage": "https://github.com/igl/neat-preset",
@@ -17,7 +17,7 @@
         "dotenv-load": "2.0.0"
     },
     "devDependencies": {
-        "@neat-preset/eslint-config": "^1.1.9"
+        "@neat-preset/eslint-config": "^1.1.10"
     },
     "eslintConfig": {
         "root": true,
