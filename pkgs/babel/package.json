@@ -16,16 +16,16 @@
         "lint": "neat-eslint ."
     },
     "dependencies": {
-        "@babel/cli": "7.10.4",
-        "@babel/core": "7.10.4",
-        "@babel/node": "7.10.4",
+        "@babel/cli": "7.10.5",
+        "@babel/core": "7.10.5",
+        "@babel/node": "7.10.5",
         "@babel/plugin-proposal-export-default-from": "7.10.4",
         "@babel/plugin-proposal-export-namespace-from": "7.10.4",
-        "@babel/plugin-proposal-partial-application": "7.10.4",
+        "@babel/plugin-proposal-partial-application": "7.10.5",
         "@babel/plugin-proposal-throw-expressions": "7.10.4",
         "@babel/plugin-syntax-dynamic-import": "7.8.3",
         "@babel/plugin-transform-destructuring": "7.10.4",
-        "@babel/plugin-transform-runtime": "7.10.4",
+        "@babel/plugin-transform-runtime": "7.10.5",
         "@babel/plugin-transform-spread": "7.10.4",
         "@babel/preset-env": "7.10.4",
         "@babel/preset-react": "7.10.4",
@@ -36,7 +36,7 @@
         "babel-plugin-styled-components": "1.10.7",
         "babel-plugin-transform-define": "2.0.0",
         "nodemon": "2.0.4",
-        "typescript": "3.9.6"
+        "typescript": "3.9.7"
     },
     "devDependencies": {
         "@neat-preset/eslint-config": "^1.1.9"

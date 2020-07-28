@@ -14,10 +14,10 @@
     "dependencies": {
         "@neat-preset/next": "^1.0.11",
         "ignore-loader": "0.1.2",
-        "next-fonts": "1.2.0",
+        "next-fonts": "1.4.0",
         "next-images": "1.4.0",
         "next-server": "9.0.5",
-        "next-transpile-modules": "3.3.0"
+        "next-transpile-modules": "4.0.0"
     },
     "devDependencies": {
         "@neat-preset/eslint-config": "^1.1.9"

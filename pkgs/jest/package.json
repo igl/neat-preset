@@ -7,7 +7,7 @@
     },
     "dependencies": {
         "@types/jest": "26.0.3",
-        "@types/node": "14.0.14",
+        "@types/node": "14.0.26",
         "babel-jest": "26.1.0",
         "jest": "26.1.0",
         "jest-chain": "1.1.5",
