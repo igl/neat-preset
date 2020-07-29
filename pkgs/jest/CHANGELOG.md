@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.18](https://github.com/igl/neat-preset/compare/@neat-preset/jest@0.0.17...@neat-preset/jest@0.0.18) (2020-07-29)
+
+**Note:** Version bump only for package @neat-preset/jest
+
+
+
+
+
 ## [0.0.17](https://github.com/igl/neat-preset/compare/@neat-preset/jest@0.0.15...@neat-preset/jest@0.0.17) (2020-07-29)
 
 **Note:** Version bump only for package @neat-preset/jest
