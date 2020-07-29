@@ -14,7 +14,8 @@
     "dependencies": {
         "@babel/runtime": "7.10.5",
         "@babel/runtime-corejs2": "7.10.5",
-        "dotenv-load": "2.0.0"
+        "dotenv-load": "2.0.0",
+        "source-map-support": "0.5.19"
     },
     "devDependencies": {
         "@neat-preset/eslint-config": "^1.1.10"
