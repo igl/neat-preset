@@ -16,7 +16,8 @@
                 "pkgs/**/__tests__/**",
                 "**/*.md",
                 "**/*.spec.ts",
-                "**/*.spec.js"
+                "**/*.spec.js",
+                "yarn.lock"
             ]
         },
         "version": {
