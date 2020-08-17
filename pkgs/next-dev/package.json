@@ -17,7 +17,7 @@
         "next-fonts": "1.4.0",
         "next-images": "1.4.1",
         "next-server": "9.0.5",
-        "next-transpile-modules": "4.0.2"
+        "next-transpile-modules": "4.1.0"
     },
     "devDependencies": {
         "@neat-preset/eslint-config": "^1.2.1"
