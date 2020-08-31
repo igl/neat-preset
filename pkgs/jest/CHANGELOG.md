@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0](https://github.com/igl/neat-preset/compare/@neat-preset/jest@0.0.23...@neat-preset/jest@0.1.0) (2020-08-31)
+
+
+### Features
+
+* **jest:** set timezone to UTC for test runs ([cd5d0ec](https://github.com/igl/neat-preset/commit/cd5d0ecf76cacfcc5e0e10b4b7b0e2d60c8fde92))
+
+
+
+
+
 ## [0.0.23](https://github.com/igl/neat-preset/compare/@neat-preset/jest@0.0.22...@neat-preset/jest@0.0.23) (2020-08-31)
 
 **Note:** Version bump only for package @neat-preset/jest
