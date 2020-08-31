@@ -11,4 +11,5 @@ module.exports = {
     collectCoverage: true,
     coverageDirectory: './dist/coverage/',
     coveragePathIgnorePatterns: ['/node_modules/', '<rootDir>/jest/'],
+    globalSetup: __dirname + '/timezone.setup.js',
 }
