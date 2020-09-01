@@ -15,7 +15,6 @@ module.exports = (context, options = {}) => {
         ],
         plugins: [
             // frontend only
-            [require('babel-plugin-jsx-control-statements')],
             [require('babel-plugin-styled-components'), styledComponentsOptions],
 
             // additional babel plugins

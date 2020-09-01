@@ -1,15 +1,13 @@
 module.exports = {
     extends: ['./base.js'],
-    plugins: ['react', 'react-hooks', 'jsx-control-statements'],
+    plugins: ['react', 'react-hooks'],
     env: {
         browser: true,
-        'jsx-control-statements/jsx-control-statements': true,
     },
     rules: {
         ...require('./rules/defaults'),
         ...require('./rules/import'),
         ...require('./rules/react'),
-        ...require('./rules/jsx-control-statements'),
     },
     settings: {
         react: {
@@ -17,7 +15,7 @@ module.exports = {
         },
         'import/resolver': {
             node: {
-                moduleDirectory: ['./src', 'node_modules', '../../node_modules'],
+                moduleDirectory: ['src', 'node_modules', '../../node_modules'],
             },
         },
     },
