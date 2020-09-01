@@ -14,6 +14,7 @@ const otherArgs = argv._.slice(1)
 const outDir = argv['out-dir'] || argv.d || 'dist'
 const extensions = argv.extensions || argv.x || '.js,.jsx,.ts,.tsx'
 const declarations = Boolean(argv.declarations)
+const help = Boolean(argv.help)
 const ignore =
     argv.ignore ||
     '"**/node_modules/**",' +
@@ -46,11 +47,15 @@ function taskDone(code) {
     }
 }
 
-spawn(BABEL, babelCallArgs, { stdio: 'inherit' }).on('exit', taskDone)
-
-// emit declaration files too
-if (declarations) {
-    spawn(TSC, tscCallArgs, { stdio: 'inherit' }).on('exit', taskDone)
+if (help) {
+    spawn(BABEL, ['--help'], { stdio: 'inherit' }).on('exit', taskDone)
 } else {
-    collectedExitCodes.push(0)
+    spawn(BABEL, babelCallArgs, { stdio: 'inherit' }).on('exit', taskDone)
+
+    // emit declaration files too
+    if (declarations) {
+        spawn(TSC, tscCallArgs, { stdio: 'inherit' }).on('exit', taskDone)
+    } else {
+        collectedExitCodes.push(0)
+    }
 }
