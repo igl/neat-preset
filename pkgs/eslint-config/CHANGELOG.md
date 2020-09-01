@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.2.3...@neat-preset/eslint-config@1.3.0) (2020-09-01)
+
+
+### Features
+
+* **next:** change import/resolver moduleDirectory root to src also for next.js apps ([d293f87](https://github.com/igl/neat-preset/commit/d293f8779b8522101349c79c4b245fa2a021dfc9))
+* remove jsx-control-statements plugins ([f7c1b69](https://github.com/igl/neat-preset/commit/f7c1b69d5c277ce6feff0b7dce6c524433e7c97e))
+
+
+
+
+
 ## [1.2.3](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.2.2...@neat-preset/eslint-config@1.2.3) (2020-08-31)
 
 **Note:** Version bump only for package @neat-preset/eslint-config
