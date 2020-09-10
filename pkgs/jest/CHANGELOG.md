@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/igl/neat-preset/compare/@neat-preset/jest@0.1.1...@neat-preset/jest@0.2.0) (2020-09-10)
+
+
+### Features
+
+* added jest-preset.js so we can use jests preset config key in userland ([6a99fd9](https://github.com/igl/neat-preset/commit/6a99fd98508e95f0c50ae2bcec52b12bc024f9ce))
+
+
+
+
+
 ## [0.1.1](https://github.com/igl/neat-preset/compare/@neat-preset/jest@0.1.0...@neat-preset/jest@0.1.1) (2020-09-01)
 
 **Note:** Version bump only for package @neat-preset/jest
