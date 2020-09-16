@@ -1,7 +1,7 @@
 module.exports = (context, options = {}) => {
     const configure = require('./configure')
 
-    const presetEnvOptions = configure.presetEnv(options, 'nextjs')
+    const nextjsOptions = options['next'] || options['nextjs'] || options['next-js']
     const styledComponentsOptions = configure.styledComponents(options, 'nextjs')
     const transformDefineOptions = configure.transformDefine(options, 'nextjs')
     const moduleResolverOptions = configure.moduleResolver(options, 'nextjs')
@@ -13,7 +13,7 @@ module.exports = (context, options = {}) => {
             [
                 require('next/babel'),
                 {
-                    'preset-env': presetEnvOptions,
+                    ...nextjsOptions,
                 },
             ],
         ],
