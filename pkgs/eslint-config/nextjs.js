@@ -10,9 +10,13 @@ module.exports = {
             },
         },
     },
+    rules: {
+        'react/react-in-jsx-scope': 'off',
+    },
     globals: {
         __DEV__: true,
         __TEST__: true,
         process: true,
+        React: 'writable',
     },
 }
