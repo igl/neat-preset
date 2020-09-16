@@ -17,6 +17,7 @@
                 "**/*.md",
                 "**/*.spec.ts",
                 "**/*.spec.js",
+                "package.json",
                 "yarn.lock"
             ]
         },
