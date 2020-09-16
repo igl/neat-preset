@@ -1,6 +1,7 @@
 module.exports = (context, options = {}) => {
     const configure = require('./configure')
 
+    const presetEnvOptions = configure.presetEnv(options, 'nextjs')
     const styledComponentsOptions = configure.styledComponents(options, 'nextjs')
     const transformDefineOptions = configure.transformDefine(options, 'nextjs')
     const moduleResolverOptions = configure.moduleResolver(options, 'nextjs')
@@ -9,7 +10,12 @@ module.exports = (context, options = {}) => {
         presets: [
             // should be a peer-dep
             // eslint-disable-next-line import/no-unresolved
-            [require('next/babel')],
+            [
+                require('next/babel'),
+                {
+                    'preset-env': presetEnvOptions,
+                },
+            ],
         ],
         plugins: [
             // frontend only
