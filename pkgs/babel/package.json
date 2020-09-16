@@ -1,6 +1,6 @@
 {
     "name": "@neat-preset/babel",
-    "version": "1.4.4",
+    "version": "1.5.0",
     "description": "opinionated babel configuration preset",
     "license": "MIT",
     "homepage": "https://github.com/igl/neat-preset",

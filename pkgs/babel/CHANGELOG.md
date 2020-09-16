@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.4.4...@neat-preset/babel@1.5.0) (2020-09-16)
+
+
+### Features
+
+* **nextjs:** pass next-js preset option to next/babel preset ([9e774d3](https://github.com/igl/neat-preset/commit/9e774d3f049b9d59ccffe859ce9b3b9803400bc5))
+
+
+
+
+
 ## [1.4.4](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.4.3...@neat-preset/babel@1.4.4) (2020-09-16)
 
 
