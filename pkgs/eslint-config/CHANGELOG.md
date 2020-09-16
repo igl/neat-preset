@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.2](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.3.1...@neat-preset/eslint-config@1.3.2) (2020-09-16)
+
+
+### Bug Fixes
+
+* **nextjs:** add React global to eslint config ([372d246](https://github.com/igl/neat-preset/commit/372d2463aa14e9d2de16802353413f59bea529be))
+
+
+
+
+
 ## [1.3.1](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.3.0...@neat-preset/eslint-config@1.3.1) (2020-09-10)
 
 **Note:** Version bump only for package @neat-preset/eslint-config
