@@ -14,10 +14,11 @@ module.exports = {
     settings: {
         'import/resolver': {
             node: {
-                moduleDirectory: ['node_modules', '../../node_modules'],
-                extensions: ['.js', '.mjs', '.jsx', '.ts', '.tsx', '.d.ts', '.json'],
+                moduleDirectory: ['./', 'src', 'node_modules', '../../node_modules'],
+                extensions: ['.js', '.jsx', '.mjs', '.ts', '.tsx', '.d.ts', '.json'],
             },
         },
+        'import/ignore': ['node_modules'],
     },
     env: {
         es6: true,

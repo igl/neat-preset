@@ -7,11 +7,4 @@ module.exports = {
         ...require('./rules/defaults'),
         ...require('./rules/import'),
     },
-    settings: {
-        'import/resolver': {
-            node: {
-                moduleDirectory: ['src', 'node_modules', '../../node_modules'],
-            },
-        },
-    },
 }
