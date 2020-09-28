@@ -1,6 +1,6 @@
 {
     "name": "@neat-preset/jest",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "types": "index.d.ts",
     "scripts": {
         "lint": "neat-eslint ."
@@ -15,7 +15,7 @@
         "jest-puppeteer": "4.4.0"
     },
     "devDependencies": {
-        "@neat-preset/eslint-config": "^1.3.2"
+        "@neat-preset/eslint-config": "^1.3.3"
     },
     "prettier": "../../prettier.config.js",
     "eslintConfig": {
