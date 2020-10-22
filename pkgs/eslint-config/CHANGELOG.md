@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.4.0...@neat-preset/eslint-config@1.5.0) (2020-10-22)
+
+
+### Features
+
+* **eslint:** disable  rule ([f1f3272](https://github.com/igl/neat-preset/commit/f1f327212c7e7a780fad07815674e6c6c90e91ab))
+
+
+
+
+
 # [1.4.0](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.3.4...@neat-preset/eslint-config@1.4.0) (2020-10-22)
 
 
