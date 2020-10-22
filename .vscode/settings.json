@@ -7,6 +7,7 @@
     "files.eol": "\n",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "git.inputValidationSubjectLength": 72,
     "javascript.suggestionActions.enabled": false,
     "typescript.tsdk": "node_modules/typescript/lib"
 }
