@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.3.4...@neat-preset/eslint-config@1.4.0) (2020-10-22)
+
+
+### Features
+
+* disable `@typescript-eslint/no-use-before-define` rule ([f58387b](https://github.com/igl/neat-preset/commit/f58387bcf3a33ca03773e4c9b29551f4916c39e5))
+
+
+
+
+
 ## [1.3.4](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.3.3...@neat-preset/eslint-config@1.3.4) (2020-09-28)
 
 **Note:** Version bump only for package @neat-preset/eslint-config
