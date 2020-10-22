@@ -1,7 +1,7 @@
 module.exports = {
     '@typescript-eslint/type-annotation-spacing': 0,
     '@typescript-eslint/prefer-interface': 0,
-    '@typescript-eslint/no-use-before-define': ['error', { functions: false }],
+    '@typescript-eslint/no-use-before-define': 0,
     '@typescript-eslint/no-unused-vars': [
         'warn',
         { argsIgnorePattern: '^_', varsIgnorePattern: '(^log$)|(^_.*)' },
