@@ -22,7 +22,6 @@
         "eslint-plugin-react-hooks": "4.2.0",
         "minimist": "1.2.5"
     },
-    "prettier": "../../prettier.config.js",
     "eslintConfig": {
         "root": true,
         "extends": "./node"

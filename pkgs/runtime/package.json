@@ -18,9 +18,6 @@
         "dotenv-load": "2.0.0",
         "source-map-support": "0.5.19"
     },
-    "devDependencies": {
-        "@neat-preset/eslint-config": "^1.5.0"
-    },
     "eslintConfig": {
         "root": true,
         "extends": "@neat-preset/eslint-config/node"

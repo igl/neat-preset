@@ -8,15 +8,16 @@
             "conventionalCommits": true,
             "ignoreChanges": [
                 "**/tmp/**",
-                "pkgs/**/dist/**",
-                "pkgs/**/test/**",
-                "pkgs/**/tests/**",
-                "pkgs/**/__fixtures__/**",
-                "pkgs/**/__mocks__/**",
-                "pkgs/**/__tests__/**",
+                "examples/**",
+                "node_modules/**",
+                "tests/**",
+                "**/__fixtures__/**",
+                "**/__mocks__/**",
+                "**/__tests__/**",
                 "**/*.md",
                 "**/*.spec.ts",
                 "**/*.spec.js",
+                "./lerna.json",
                 "./package.json",
                 "./yarn.lock"
             ]

@@ -9,6 +9,7 @@
         "lint": "yarn lerna run --stream --parallel lint",
         "preship": "yarn lint",
         "ship": "lerna publish --no-commit-hooks --yes",
+        "changed": "lerna changed",
         "up": "yarn upgrade-interactive --latest"
     },
     "workspaces": {
@@ -17,6 +18,7 @@
         ]
     },
     "devDependencies": {
+        "@neat-preset/eslint-config": "^1.5.0",
         "lerna": "^3.22.1",
         "next": "9.5.5",
         "prettier": "2.1.2"
