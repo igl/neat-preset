@@ -1,6 +1,6 @@
 # neat-presets
 
-My highly opinionated _batteries included_ plugin-bundle for [nextjs](https://nextjs.org/) applications
+My highly opinionated _batteries included_ plugin-bundles
 
 -   Babel presets for next `@neat-preset/babel/next` and node `@neat-preset/babel/node`
 -   Production ready next configuration at `@neat-preset/next` which is including `next-env`, `next-images` and `next-fonts`
