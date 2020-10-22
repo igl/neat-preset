@@ -19,6 +19,9 @@ module.exports = {
     // this makes code ugly and we prefer immutable objects.
     'require-atomic-updates': 0,
 
+    // you want immutable values - not immutable bindings!
+    'prefer-const': 0,
+
     // Enforces return statements in callbacks of array’s methods
     'array-callback-return': 'error',
 }
