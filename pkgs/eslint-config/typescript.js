@@ -6,6 +6,7 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
     ],
     rules: {
+        ...require('./rules/defaults'),
         ...require('./rules/typescript'),
     },
 }
