@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.2](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.5.1...@neat-preset/eslint-config@1.5.2) (2020-10-23)
+
+
+### Bug Fixes
+
+* defaults overwritten by eslint recommended set again ([be08ae8](https://github.com/igl/neat-preset/commit/be08ae8dabd71da18bd8fcc650fc4a6d089dfaf0))
+
+
+
+
+
 ## [1.5.1](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.5.0...@neat-preset/eslint-config@1.5.1) (2020-10-22)
 
 **Note:** Version bump only for package @neat-preset/eslint-config
