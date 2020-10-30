@@ -20,7 +20,7 @@
     "devDependencies": {
         "@neat-preset/eslint-config": "^1.5.0",
         "lerna": "^3.22.1",
-        "next": "9.5.5",
+        "next": "10.0.0",
         "prettier": "2.1.2"
     },
     "prettier": "./prettier.config.js"
