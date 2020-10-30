@@ -1,6 +1,6 @@
 {
     "name": "@neat-preset/eslint-config",
-    "version": "1.5.2",
+    "version": "1.5.3",
     "description": "eslint config preset",
     "main": "node.js",
     "bin": {

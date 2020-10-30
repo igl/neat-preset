@@ -1,6 +1,6 @@
 {
     "name": "@neat-preset/next-dev",
-    "version": "2.1.17",
+    "version": "2.1.18",
     "description": "opinionated next configuration preset",
     "license": "MIT",
     "homepage": "https://github.com/igl/neat-preset",
