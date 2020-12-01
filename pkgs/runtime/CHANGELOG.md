@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.16](https://github.com/igl/neat-preset/compare/@neat-preset/runtime@0.2.15...@neat-preset/runtime@0.2.16) (2020-12-01)
+
+**Note:** Version bump only for package @neat-preset/runtime
+
+
+
+
+
 ## [0.2.15](https://github.com/igl/neat-preset/compare/@neat-preset/runtime@0.2.14...@neat-preset/runtime@0.2.15) (2020-10-22)
 
 **Note:** Version bump only for package @neat-preset/runtime
