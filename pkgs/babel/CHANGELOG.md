@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.5.7...@neat-preset/babel@1.6.0) (2020-12-06)
+
+
+### Features
+
+* **babel:** added dev-expression plugin ([6a97e4c](https://github.com/igl/neat-preset/commit/6a97e4ce16230d59eec24fe6184d59d95541f97c))
+
+
+
+
+
 ## [1.5.7](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.5.6...@neat-preset/babel@1.5.7) (2020-12-01)
 
 **Note:** Version bump only for package @neat-preset/babel

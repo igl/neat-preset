@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.5.4...@neat-preset/eslint-config@1.6.0) (2020-12-06)
+
+
+### Features
+
+* **lint:** added ignorePatterns for files starting or ending with `~` ([dd591a1](https://github.com/igl/neat-preset/commit/dd591a1dd4aa833da3f122e08142bb498bbbd05c))
+
+
+
+
+
 ## [1.5.4](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.5.3...@neat-preset/eslint-config@1.5.4) (2020-12-01)
 
 **Note:** Version bump only for package @neat-preset/eslint-config

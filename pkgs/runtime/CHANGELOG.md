@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/igl/neat-preset/compare/@neat-preset/runtime@0.2.16...@neat-preset/runtime@0.3.0) (2020-12-06)
+
+
+### Features
+
+* **runtime:** add tiny-invariant and tiny-warning ([0cab94f](https://github.com/igl/neat-preset/commit/0cab94f84b0bb8bf7180ea17e7c2ed49ff75f8a4))
+
+
+
+
+
 ## [0.2.16](https://github.com/igl/neat-preset/compare/@neat-preset/runtime@0.2.15...@neat-preset/runtime@0.2.16) (2020-12-01)
 
 **Note:** Version bump only for package @neat-preset/runtime
