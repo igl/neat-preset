@@ -54,7 +54,6 @@ exports.transformRuntime = (options = {}, target) => {
 
 exports.transformDefine = (options = {}, _target) => {
     const defaultConfig = {
-        __DEV__: process.env.NODE_ENV !== 'production',
         __TEST__:
             Boolean(process.env.TEST) ||
             Boolean(process.env.JEST_WORKER_ID) ||
