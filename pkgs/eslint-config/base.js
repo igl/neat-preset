@@ -5,6 +5,7 @@ module.exports = {
         'plugin:import/warnings',
         'plugin:import/errors',
         'plugin:jest/recommended',
+        'plugin:react-hooks/recommended',
     ],
     plugins: ['jest', 'import'],
     parser: 'babel-eslint',
