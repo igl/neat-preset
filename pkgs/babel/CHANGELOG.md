@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.6.1...@neat-preset/babel@1.7.0) (2021-01-05)
+
+
+### Features
+
+* **babel:** use ttypescript for type declaration compilation ([a885d41](https://github.com/igl/neat-preset/commit/a885d41bd7190aed195c8c4d8a320f01cb7393b8))
+
+
+
+
+
 ## [1.6.1](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.6.0...@neat-preset/babel@1.6.1) (2020-12-22)
 
 **Note:** Version bump only for package @neat-preset/babel
