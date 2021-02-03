@@ -1,6 +1,7 @@
 module.exports = {
     'import/default': 'error',
     'import/export': 'error',
+    'import/extensions': ['error', 'never'],
     'import/named': 'error',
     'import/namespace': 'error',
     'import/no-absolute-path': 'error',

@@ -14,7 +14,7 @@ module.exports = {
     'no-unused-vars': 0,
     'no-use-before-define': 0,
 
-    // ignore until we have proper logger
+    // ignore until you have proper logger
     'no-console': 0,
 
     // this makes code ugly and we prefer immutable objects

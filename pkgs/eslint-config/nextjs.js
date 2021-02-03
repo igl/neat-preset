@@ -6,7 +6,7 @@ module.exports = {
         },
     },
     rules: {
-        'react/react-in-jsx-scope': 'off',
+        'react/react-in-jsx-scope': 0,
     },
     globals: {
         __DEV__: true,
