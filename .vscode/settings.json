@@ -9,5 +9,13 @@
     "files.trimTrailingWhitespace": true,
     "git.inputValidationSubjectLength": 72,
     "javascript.suggestionActions.enabled": false,
+    "search.exclude": {
+        "**/tmp": true,
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/build": true,
+        "**/.next/": true,
+        "**/yarn.lock": true
+    },
     "typescript.tsdk": "node_modules/typescript/lib"
 }
