@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.6.2...@neat-preset/eslint-config@1.7.0) (2021-02-09)
+
+
+### Features
+
+* **lint:** added plugins: jsx-a11y, simple-import-sort ([6ee2337](https://github.com/igl/neat-preset/commit/6ee233788762dcb8b11886eea38971adf5ab9bd7))
+
+
+
+
+
 ## [1.6.2](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.6.1...@neat-preset/eslint-config@1.6.2) (2021-01-05)
 
 **Note:** Version bump only for package @neat-preset/eslint-config

@@ -1,6 +1,6 @@
 {
     "name": "@neat-preset/next-dev",
-    "version": "2.2.0",
+    "version": "2.2.1",
     "description": "opinionated next configuration preset",
     "license": "MIT",
     "homepage": "https://github.com/igl/neat-preset",
@@ -12,7 +12,7 @@
         "lint": "neat-eslint ."
     },
     "dependencies": {
-        "@neat-preset/next": "^1.0.28",
+        "@neat-preset/next": "^1.0.29",
         "ignore-loader": "0.1.2",
         "next-fonts": "1.5.1",
         "next-images": "1.7.0",
