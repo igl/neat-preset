@@ -25,6 +25,7 @@ module.exports = (neatOptions = {}) => {
             const withGraphqlLanguageServiceInterfaceFix = (nextConfig = {}) => ({
                 ...nextConfig,
                 webpack(config, options) {
+                    /* eslint-disable-next-line import/no-unresolved */
                     const webpack = require('webpack')
 
                     config.module.rules.unshift({
