@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.7.1...@neat-preset/babel@1.8.0) (2021-02-17)
+
+
+### Features
+
+* add __REV__ expression for git revision stamping ([077bd25](https://github.com/igl/neat-preset/commit/077bd25bcad69acb82d9c1d4309e3f2b5318fc7a))
+
+
+
+
+
 ## [1.7.1](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.7.0...@neat-preset/babel@1.7.1) (2021-02-09)
 
 **Note:** Version bump only for package @neat-preset/babel

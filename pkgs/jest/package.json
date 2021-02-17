@@ -1,6 +1,6 @@
 {
     "name": "@neat-preset/jest",
-    "version": "0.2.13",
+    "version": "0.2.14",
     "types": "index.d.ts",
     "scripts": {
         "lint": "neat-eslint ."
