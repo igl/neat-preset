@@ -32,6 +32,7 @@ module.exports = {
     globals: {
         __DEV__: true,
         __TEST__: true,
+        __REV__: true,
     },
     ignorePatterns: ['**/~*', '**/*~'],
     rules: require('./rules/defaults'),

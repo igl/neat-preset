@@ -52,8 +52,20 @@ exports.transformRuntime = (options = {}, target) => {
     }
 }
 
+const getRevision = () => {
+    try {
+        return require('child_process')
+            .execSync('git rev-parse HEAD', { stdio: 'pipe' })
+            .toString()
+            .trim()
+    } catch (_) {
+        return new Date().toISOString()
+    }
+}
+
 exports.transformDefine = (options = {}, _target) => {
     const defaultConfig = {
+        __REV__: getRevision(),
         __TEST__:
             Boolean(process.env.TEST) ||
             Boolean(process.env.JEST_WORKER_ID) ||
