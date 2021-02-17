@@ -5,7 +5,7 @@ My highly opinionated _batteries included_ plugin-bundles
 -   Babel presets for next `@neat-preset/babel/next` and node `@neat-preset/babel/node`
 -   Production ready next configuration at `@neat-preset/next` which is including `next-env`, `next-images` and `next-fonts`
 -   Adds dotenv loading behaviour similar to `create-react-app`
--   Adds global dev-expression (compiling `__DEV__` to `true` or `false` based on your `NODE_ENV` passed to `next build`)
+-   Adds global dev-expression (compiling `__DEV__` to `true` or `false` based on your `NODE_ENV` on build-time)
 -   Includes my favorite babel plugins like `babel-plugin-macros` and export-syntax extensions [See list below](#included-libraries)
 
 ## Usage
