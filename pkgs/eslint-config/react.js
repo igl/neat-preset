@@ -1,6 +1,6 @@
 module.exports = {
-    extends: ['plugin:react-hooks/recommended', 'plugin:jsx-a11y/recommended', './base.js'],
-    plugins: ['react', 'react-hooks', 'jsx-a11y'],
+    extends: ['plugin:react-hooks/recommended', './base.js'],
+    plugins: ['react', 'react-hooks'],
     env: {
         browser: true,
     },

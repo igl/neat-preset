@@ -23,12 +23,4 @@ module.exports = {
     'react/prefer-es6-class': ['error', 'always'],
     'react/prop-types': 0,
     'react/sort-comp': 'warn',
-    'jsx-a11y/anchor-is-valid': [
-        'error',
-        {
-            components: ['Link'],
-            specialLink: ['hrefLeft', 'hrefRight'],
-            aspects: ['invalidHref', 'preferButton'],
-        },
-    ],
 }
