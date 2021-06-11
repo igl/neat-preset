@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.8.1...@neat-preset/eslint-config@1.9.0) (2021-06-11)
+
+
+### Features
+
+* removed eslint-plugin-jsx-a11y ([9368e74](https://github.com/igl/neat-preset/commit/9368e7416b63ce75f31fe1c7d821b61f5d97f3aa))
+
+
+
+
+
 ## [1.8.1](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.8.0...@neat-preset/eslint-config@1.8.1) (2021-06-11)
 
 **Note:** Version bump only for package @neat-preset/eslint-config
