@@ -15,9 +15,9 @@
         "@neat-preset/next": "^1.0.30",
         "ignore-loader": "0.1.2",
         "next-fonts": "1.5.1",
-        "next-images": "1.7.0",
+        "next-images": "1.8.1",
         "next-server": "9.0.5",
-        "next-transpile-modules": "7.3.0"
+        "next-transpile-modules": "8.0.0"
     },
     "peerDependencies": {
         "next": "=> 5.1.0"
