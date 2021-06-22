@@ -3,38 +3,30 @@
     "version": "1.0.0",
     "description": "example code",
     "scripts": {
-        "dev": "nodemon -x 'babel-node --config-file ./babel.server.js server/index.js' --quiet --watch server",
         "build": "babel src",
-        "start": "NODE_ENV=production node dist",
-        "up": "yarn upgrade-interactive --latest"
+        "lint": "neat-eslint ./src"
     },
-    "dependencies": {
-        "@neat-preset/next": "1.0.11",
-        "next": "9.4.4",
-        "next-routes": "1.4.2",
-        "react": "16.13.1",
-        "react-dom": "16.13.1"
-    },
+    "dependencies": { },
     "devDependencies": {
-        "@babel/cli": "7.10.4",
-        "@babel/node": "7.10.4",
         "@neat-preset/babel": "file:../../pkgs/babel",
-        "@neat-preset/next-dev": "file:../../pkgs/next-dev",
+        "@neat-preset/eslint-config": "file:../../pkgs/eslint-config",
         "nodemon": "2.0.4"
-    },
-    "prettier": {
-        "parser": "babel",
-        "tabWidth": 4,
-        "printWidth": 100,
-        "semi": false,
-        "trailingComma": "es5",
-        "bracketSpacing": true,
-        "singleQuote": true,
-        "jsxSingleQuote": true
     },
     "babel": {
         "presets": [
             "@neat-preset/babel/nextjs"
         ]
+    },
+    "eslintConfig": {
+        "root": true,
+        "extends": [
+            "@neat-preset/eslint-config/react",
+            "@neat-preset/eslint-config/typescript"
+        ],
+        "settings": {
+            "import/ignore": [
+                "node_modules"
+            ]
+        }
     }
 }
