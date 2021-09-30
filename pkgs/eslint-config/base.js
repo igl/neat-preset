@@ -7,8 +7,9 @@ module.exports = {
         'plugin:jest/recommended',
     ],
     plugins: ['jest', 'import', 'simple-import-sort'],
-    parser: 'babel-eslint',
+    parser: '@babel/eslint-parser',
     parserOptions: {
+        requireConfigFile: false,
         sourceType: 'module',
     },
     settings: {

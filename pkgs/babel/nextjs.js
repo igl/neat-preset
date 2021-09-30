@@ -8,9 +8,9 @@ module.exports = (context, options = {}) => {
 
     return {
         presets: [
-            // should be a peer-dep
-            // eslint-disable-next-line import/no-unresolved
             [
+                // should be a peer-dep
+                /* eslint-disable-next-line import/no-unresolved */
                 require('next/babel'),
                 {
                     ...nextjsOptions,
