@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/igl/neat-preset/compare/@neat-preset/jest@0.2.15...@neat-preset/jest@0.3.0) (2021-09-30)
+
+
+### Features
+
+* it's 2021. let's upgrade corejs 2 -> 3 ([737a6ae](https://github.com/igl/neat-preset/commit/737a6ae5b3b8c2b211a2d3d908d4af11810cfa32))
+
+
+
+
+
 ## [0.2.15](https://github.com/igl/neat-preset/compare/@neat-preset/jest@0.2.14...@neat-preset/jest@0.2.15) (2021-06-11)
 
 **Note:** Version bump only for package @neat-preset/jest

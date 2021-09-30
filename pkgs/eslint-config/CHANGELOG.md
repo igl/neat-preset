@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.9.1...@neat-preset/eslint-config@1.10.0) (2021-09-30)
+
+
+### Bug Fixes
+
+* changes in eslint config ([46cbef2](https://github.com/igl/neat-preset/commit/46cbef2a430a8675255de5efad8f8774d2646c5e))
+
+
+### Features
+
+* it's 2021. let's upgrade corejs 2 -> 3 ([737a6ae](https://github.com/igl/neat-preset/commit/737a6ae5b3b8c2b211a2d3d908d4af11810cfa32))
+
+
+
+
+
 ## [1.9.1](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.9.0...@neat-preset/eslint-config@1.9.1) (2021-06-11)
 
 **Note:** Version bump only for package @neat-preset/eslint-config
