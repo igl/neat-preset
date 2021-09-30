@@ -12,8 +12,8 @@
         "lint": "neat-eslint ."
     },
     "dependencies": {
-        "@babel/runtime": "7.14.6",
-        "@babel/runtime-corejs2": "7.14.6",
+        "@babel/runtime": "7.15.4",
+        "@babel/runtime-corejs3": "7.15.4",
         "dotenv-load": "2.0.0",
         "next-env": "1.1.1"
     },
