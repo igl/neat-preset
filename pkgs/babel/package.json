@@ -10,7 +10,8 @@
     },
     "bin": {
         "neat-babel": "./bin-babel.js",
-        "neat-babel-node": "./bin-babel-node.js"
+        "neat-babel-node": "./bin-babel-node.js",
+        "neat-swc": "./bin-swc.js"
     },
     "scripts": {
         "lint": "neat-eslint ."
@@ -30,11 +31,14 @@
         "@babel/preset-env": "7.15.6",
         "@babel/preset-react": "7.14.5",
         "@babel/preset-typescript": "7.15.0",
+        "@swc/cli": "0.1.51",
+        "@swc/core": "1.2.92",
         "babel-plugin-dev-expression": "0.2.2",
         "babel-plugin-macros": "3.1.0",
         "babel-plugin-module-resolver": "4.1.0",
         "babel-plugin-styled-components": "1.13.2",
         "babel-plugin-transform-define": "2.0.1",
+        "chokidar": "3.5.2",
         "nodemon": "2.0.13",
         "ttypescript": "1.5.12"
     },
