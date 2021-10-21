@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/igl/neat-preset/compare/@neat-preset/next@1.1.0...@neat-preset/next@1.2.0) (2021-10-21)
+
+
+### Features
+
+* removed next-env/dotenv-load ([161908e](https://github.com/igl/neat-preset/commit/161908e288d5a21865b52caa06500012d814d8c3))
+
+
+
+
+
 # [1.1.0](https://github.com/igl/neat-preset/compare/@neat-preset/next@1.0.30...@neat-preset/next@1.1.0) (2021-09-30)
 
 
