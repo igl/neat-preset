@@ -3,7 +3,7 @@
 My highly opinionated _batteries included_ plugin-bundles
 
 -   Babel presets for next `@neat-preset/babel/next` and node `@neat-preset/babel/node`
--   Production ready next configuration at `@neat-preset/next` which is including `next-env`, `next-images` and `next-fonts`
+-   Production ready next configuration at `@neat-preset/next` which is including, `next-images` and `next-fonts`
 -   Adds dotenv loading behaviour similar to `create-react-app`
 -   Adds global dev-expression (compiling `__DEV__` to `true` or `false` based on your `NODE_ENV` on build-time)
 -   Includes my favorite babel plugins like `babel-plugin-macros` and export-syntax extensions [See list below](#included-libraries)
@@ -12,23 +12,6 @@ My highly opinionated _batteries included_ plugin-bundles
 
 yarn add @neat-preset/next
 yarn add --dev @neat-preset/next-dev @neat-preset/babel
-
-Create a `.env`
-
-```
-NEXT_SERVER_TEST_1=ONLY_ON_SSR
-NEXT_PUBLIC_TEST_1=INJECTED_BY_SSR  // available/exposed in the browser
-NEXT_STATIC_TEST_1=STATIC_TEXT      // embedded in the js bundles on build time (use this in nextjs serverless mode!)
-```
-
-Ignore .env.local files in your `.gitignore`
-
-```
-.env.local
-.env.*.local
-```
-
-[What other env files can i use?](https://github.com/formatlos/dotenv-load#what-other-env-files-can-i-use).
 
 ### Babel for Nextjs Clients
 
@@ -93,19 +76,6 @@ module.exports = require('@neat-preset/next-dev')({
 })
 ```
 
-With Custom env variable prefixes:
-
-```js
-module.exports = require('@neat-preset/next-dev')({
-    env: {
-        staticPrefix: 'NEXT_APP_STATIC_',
-        publicPrefix: 'NEXT_APP_PUBLIC_',
-    },
-})({
-    target: 'serverless',
-})
-```
-
 List `node_modules/` that should be transpiled before being included by webpack
 
 ```js
@@ -134,9 +104,7 @@ Please check them out:
 -   [@zeit/next-typescript](https://www.npmjs.com/package/@zeit/next-typescript)
 -   [next-images](https://www.npmjs.com/package/next-images)
 -   [next-fonts](https://www.npmjs.com/package/next-fonts)
--   [next-env](https://www.npmjs.com/package/next-env)
 -   [next-transpile-modules](https://www.npmjs.com/package/next-transpile-modules)
--   [dotenv-load](https://www.npmjs.com/package/dotenv-load)
 
 -   [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env)
 -   [babel-plugin-macros](https://www.npmjs.com/package/babel-plugin-macros)

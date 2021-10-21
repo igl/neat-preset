@@ -3,13 +3,8 @@ const { PHASE_PRODUCTION_SERVER = null } =
         ? {} // We're never in "production server" phase when in development mode
         : require('./constants')
 
-// load .env files
-require('dotenv-load')()
-
 // config getter
 module.exports = (options = {}) => {
-    const withEnv = require('next-env')(options.env)
-
     return (nextConfig = {}, composePlugins = {}) => {
         const { nextComposePlugins, phase } = composePlugins
 
@@ -25,6 +20,6 @@ module.exports = (options = {}) => {
             return nextConfig
         }
 
-        return withEnv(nextComposePlugins ? nextConfigMethod(phase) : nextConfigMethod)
+        return nextComposePlugins ? nextConfigMethod(phase) : nextConfigMethod
     }
 }

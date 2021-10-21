@@ -13,9 +13,7 @@
     },
     "dependencies": {
         "@babel/runtime": "7.15.4",
-        "@babel/runtime-corejs3": "7.15.4",
-        "dotenv-load": "2.0.0",
-        "next-env": "1.1.1"
+        "@babel/runtime-corejs3": "7.15.4"
     },
     "peerDependencies": {
         "next": "=> 5.1.0",
