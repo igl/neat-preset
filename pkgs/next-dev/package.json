@@ -17,7 +17,7 @@
         "next-fonts": "1.5.1",
         "next-images": "1.8.1",
         "next-server": "9.0.5",
-        "next-transpile-modules": "8.0.0"
+        "next-transpile-modules": "9.0.0"
     },
     "peerDependencies": {
         "next": "=> 5.1.0"
