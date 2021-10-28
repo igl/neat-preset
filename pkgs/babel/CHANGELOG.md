@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.1](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.10.0...@neat-preset/babel@1.10.1) (2021-10-28)
+
+**Note:** Version bump only for package @neat-preset/babel
+
+
+
+
+
 # [1.10.0](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.9.0...@neat-preset/babel@1.10.0) (2021-10-21)
 
 
