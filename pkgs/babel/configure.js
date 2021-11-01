@@ -19,7 +19,7 @@ exports.presetEnv = (options = {}, target) => {
         useBuiltIns: 'usage',
         corejs: String(getOption(COREJS, target)),
         targets: getOption(PRESET_ENV_TARGETS, target),
-        modules: 'commonjs',
+        modules: false,
     }
 
     const userConfig =
