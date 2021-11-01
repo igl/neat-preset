@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.7](https://github.com/igl/neat-preset/compare/@neat-preset/next-dev@2.2.6...@neat-preset/next-dev@2.2.7) (2021-11-01)
+
+
+### Bug Fixes
+
+* **next-dev:** webpage IgnorePlugin signature change ([27b7f84](https://github.com/igl/neat-preset/commit/27b7f840afc68281e6bccb3e7edaef975a0c8e41))
+
+
+
+
+
 ## [2.2.6](https://github.com/igl/neat-preset/compare/@neat-preset/next-dev@2.2.5...@neat-preset/next-dev@2.2.6) (2021-11-01)
 
 **Note:** Version bump only for package @neat-preset/next-dev
