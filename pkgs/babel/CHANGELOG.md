@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.3](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.10.2...@neat-preset/babel@1.10.3) (2021-11-01)
+
+
+### Bug Fixes
+
+* **babel:** The `modules` option on "preset-env" should be kept to false ([644960b](https://github.com/igl/neat-preset/commit/644960bb5e234b6de5e80c429ed21baddad204a9))
+
+
+
+
+
 ## [1.10.2](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.10.1...@neat-preset/babel@1.10.2) (2021-11-01)
 
 **Note:** Version bump only for package @neat-preset/babel
