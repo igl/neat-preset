@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.6](https://github.com/igl/neat-preset/compare/@neat-preset/next-dev@2.2.5...@neat-preset/next-dev@2.2.6) (2021-11-01)
+
+**Note:** Version bump only for package @neat-preset/next-dev
+
+
+
+
+
 ## [2.2.5](https://github.com/igl/neat-preset/compare/@neat-preset/next-dev@2.2.4...@neat-preset/next-dev@2.2.5) (2021-10-28)
 
 **Note:** Version bump only for package @neat-preset/next-dev
