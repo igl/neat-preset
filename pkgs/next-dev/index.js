@@ -38,8 +38,8 @@ module.exports = (neatOptions = {}) => {
                             /graphql-language-service-interface[\\/]dist$/,
                             new RegExp(`^\\./.*\\.js$`)
                         ),
-                        new webpack.IgnorePlugin(/\/__tests__\//),
-                        new webpack.IgnorePlugin(/\/\.(spec|test)\./)
+                        new webpack.IgnorePlugin({ resourceRegExp: /\/__tests__\// }),
+                        new webpack.IgnorePlugin({ resourceRegExp: /\/\.(spec|test)\./ })
                     )
 
                     if (typeof nextConfig.webpack === 'function') {
