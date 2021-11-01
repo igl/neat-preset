@@ -13,11 +13,11 @@
         "lint": "neat-eslint ."
     },
     "dependencies": {
-        "@babel/runtime": "7.15.4",
-        "@babel/runtime-corejs3": "7.15.4",
+        "@babel/runtime": "7.16.0",
+        "@babel/runtime-corejs3": "7.16.0",
         "core-js": "3.19.0",
         "source-map-support": "0.5.20",
-        "tiny-invariant": "1.1.0",
+        "tiny-invariant": "1.2.0",
         "tiny-warning": "1.0.3"
     },
     "eslintConfig": {

@@ -6,7 +6,7 @@ module.exports = {
         'plugin:import/errors',
         'plugin:jest/recommended',
     ],
-    plugins: ['jest', 'import', 'simple-import-sort'],
+    plugins: ['jest', 'import'],
     parser: '@babel/eslint-parser',
     parserOptions: {
         requireConfigFile: false,
