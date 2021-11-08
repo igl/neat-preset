@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.6](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.10.5...@neat-preset/eslint-config@1.10.6) (2021-11-08)
+
+
+### Bug Fixes
+
+* downgrade eslint 8 -> 7 ([9a1ab7f](https://github.com/igl/neat-preset/commit/9a1ab7f52ad70b84da066f5d32732db08428529a))
+
+
+
+
+
 ## [1.10.5](https://github.com/igl/neat-preset/compare/@neat-preset/eslint-config@1.10.4...@neat-preset/eslint-config@1.10.5) (2021-11-08)
 
 **Note:** Version bump only for package @neat-preset/eslint-config
