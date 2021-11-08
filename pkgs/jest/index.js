@@ -7,7 +7,7 @@ module.exports = {
     transform: {
         '^.+\\.(js|ts)x?$': 'babel-jest',
     },
-    setupFilesAfterEnv: ['jest-chain', 'jest-extended'],
+    setupFilesAfterEnv: ['jest-chain', 'jest-extended/app'],
     collectCoverage: true,
     coverageDirectory: './dist/coverage/',
     coveragePathIgnorePatterns: ['/node_modules/', '<rootDir>/jest/'],
