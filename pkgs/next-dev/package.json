@@ -15,7 +15,7 @@
         "@neat-preset/next": "^1.2.1",
         "ignore-loader": "0.1.2",
         "next-fonts": "1.5.1",
-        "next-images": "1.8.2",
+        "next-images": "1.8.4",
         "next-server": "9.0.5",
         "next-transpile-modules": "9.0.0"
     },
