@@ -1,6 +1,6 @@
 {
     "name": "@neat-preset/runtime",
-    "version": "0.4.5",
+    "version": "0.4.6",
     "description": "opinionated next configuration preset",
     "main": "index.js",
     "license": "MIT",
