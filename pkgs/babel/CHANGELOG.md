@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.10.0...@neat-preset/babel@2.0.1) (2022-10-19)
+
+
+### Bug Fixes
+
+* **ttypescript:** remove ttypescript ([b6ffdc8](https://github.com/igl/neat-preset/commit/b6ffdc88ddae6c3671fcdc4abfef4a33c370daad))
+
+
+
+
+
 # [1.10.0](https://github.com/igl/neat-preset/compare/@neat-preset/babel@1.9.0...@neat-preset/babel@1.10.0) (2021-10-21)
 
 
