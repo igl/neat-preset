@@ -18,7 +18,7 @@
         ]
     },
     "devDependencies": {
-        "@neat-preset/eslint-config": "^1.5.0",
+        "@neat-preset/eslint-config": "*",
         "lerna": "^4.0.0",
         "prettier": "2.7.1"
     },
