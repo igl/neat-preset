@@ -24,7 +24,6 @@ yarn add --dev @neat-preset/next-dev @neat-preset/babel
       "module-resolver": {},
       "styled-jsx": {},
       "class-properties": {}
-      "optional-chaining": {}
       "styled-components": {}
     }]
   ],

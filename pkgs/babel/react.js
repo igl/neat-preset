@@ -22,7 +22,6 @@ module.exports = (context, options = {}) => {
             [require('@babel/plugin-proposal-export-default-from')],
             [require('@babel/plugin-proposal-export-namespace-from')],
             [require('@babel/plugin-proposal-throw-expressions')],
-            [require('babel-plugin-dev-expression')],
             [require('babel-plugin-transform-define'), transformDefineOptions],
             [require('babel-plugin-module-resolver'), moduleResolverOptions],
         ],
