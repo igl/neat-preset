@@ -7,7 +7,7 @@ const minimist = require('minimist')
 const argv = minimist(process.argv.slice(2))
 
 const BABEL = path.resolve(__dirname, './node_modules/.bin/babel')
-const TSC = path.resolve(__dirname, './node_modules/.bin/ttsc')
+const TSC = path.resolve(__dirname, './node_modules/.bin/tsc')
 
 const source = argv._[0]
 const otherArgs = argv._.slice(1)

@@ -1,6 +1,6 @@
 {
     "name": "@neat-preset/babel",
-    "version": "1.10.0",
+    "version": "2.0.0",
     "description": "opinionated babel configuration preset",
     "license": "MIT",
     "homepage": "https://github.com/igl/neat-preset",
@@ -39,8 +39,7 @@
         "babel-plugin-styled-components": "1.13.3",
         "babel-plugin-transform-define": "2.0.1",
         "chokidar": "3.5.2",
-        "nodemon": "2.0.14",
-        "ttypescript": "1.5.12"
+        "nodemon": "2.0.14"
     },
     "peerDependencies": {
         "typescript": "^4.*"
